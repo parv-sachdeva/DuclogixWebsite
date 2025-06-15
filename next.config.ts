@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "source.unsplash.com",
+        hostname: "assets.aceternity.com",
         port: "",
         pathname: "**",
       },
@@ -22,6 +22,9 @@ const nextConfig: NextConfig = {
         pathname: "**",
       },
     ],
+  },
+  experimental: {
+    esmExternals: false,
   },
   /* config options here */
 };

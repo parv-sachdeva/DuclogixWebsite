@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion, Transition } from "framer-motion";
+import Image from "next/image";
 
 
 
@@ -60,7 +61,6 @@ export const MenuItem = ({
 };
 
 export const Menu = ({
-  setActive,
   children,
 }: {
   setActive: (item: string | null) => void;
@@ -68,7 +68,6 @@ export const Menu = ({
 }) => {
   return (
     <nav
-      // onMouseLeave={() => setActive(null)} // resets the state
       className="relative border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4  md:space-x-8"
     >
       {children}
@@ -89,7 +88,7 @@ export const ProductItem = ({
 }) => {
   return (
     <a href={href} className="flex space-x-2">
-      <img
+      <Image
         src={src}
         width={140}
         height={70}

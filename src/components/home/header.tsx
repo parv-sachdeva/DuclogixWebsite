@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, MenuItem, HoveredLink, ProductItem } from '@/components/ui/navbar-menu';
+import { Menu, MenuItem, ProductItem } from '@/components/ui/navbar-menu';
 
 const Header = () => {
     const [active, setActive] = useState<string | null>(null);
@@ -19,19 +19,27 @@ const Header = () => {
                         <nav className="hidden md:flex space-x-8">
                             <MenuItem setActive={setActive} active={active} item="Services">
                                 <div className="flex flex-col space-y-4 text-sm">
-                                    <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                                    <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-                                    <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-                                    <HoveredLink href="/branding">Branding</HoveredLink>
+                                <ProductItem
+                                        title="Life Sciences"
+                                        href="/life-sciences"
+                                        src="https://assets.aceternity.com/demos/algochurn.webp"
+                                        description="Accelerate digitization in life sciences with our industry expertise"
+                                    />
+                                    <ProductItem
+                                        title="Tailwind Master Kit"
+                                        href="https://tailwindmasterkit.com"
+                                        src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+                                        description="Production ready Tailwind css components for your next project"
+                                    />
                                 </div>
                             </MenuItem>
                             <MenuItem setActive={setActive} active={active} item="Products">
                                 <div className="  text-sm grid grid-cols-2 gap-10 p-4">
                                     <ProductItem
-                                        title="Algochurn"
-                                        href="https://algochurn.com"
+                                        title="Business Consulting"
+                                        href="/business-consulting"
                                         src="https://assets.aceternity.com/demos/algochurn.webp"
-                                        description="Prepare for tech interviews like never before."
+                                        description="A comprehensive business consulting service to help you grow your business"
                                     />
                                     <ProductItem
                                         title="Tailwind Master Kit"
