@@ -1,5 +1,38 @@
 {
-  "Index": {
-    "hello": "¡Hola, Mundo!"
+  "common": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "businessConsulting": "Consultoría Empresarial",
+    "lifeSciences": "Ciencias de la Vida",
+    "caseStudies": "Casos de Estudio",
+    "learnMore": "Saber más",
+    "getInTouch": "Ponte en contacto",
+    "readMore": "Leer más",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "submit": "Enviar",
+    "name": "Nombre",
+    "message": "Mensaje",
+    "company": "Empresa"
+  },
+  "navigation": {
+    "menu": "Menú",
+    "close": "Cerrar"
+  },
+  "hero": {
+    "title": "Soluciones Impulsadas por la Innovación",
+    "subtitle": "Transformando empresas a través de consultoría estratégica y experiencia de vanguardia en ciencias de la vida",
+    "cta": "Descubre nuestros Servicios"
+  },
+  "footer": {
+    "description": "Liderando el camino en consultoría empresarial e innovación en ciencias de la vida.",
+    "quickLinks": "Enlaces rápidos",
+    "services": "Servicios",
+    "contact": "Información de contacto",
+    "followUs": "Síguenos",
+    "allRightsReserved": "Todos los derechos reservados."
   }
 }

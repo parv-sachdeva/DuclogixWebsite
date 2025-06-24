@@ -1,5 +1,38 @@
 {
-  "Index": {
-    "hello": "Bonjour, le monde!"
+  "common": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact",
+    "businessConsulting": "Conseil en Entreprise",
+    "lifeSciences": "Sciences de la Vie",
+    "caseStudies": "Études de Cas",
+    "learnMore": "En savoir plus",
+    "getInTouch": "Nous contacter",
+    "readMore": "Lire la suite",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "submit": "Envoyer",
+    "name": "Nom",
+    "message": "Message",
+    "company": "Entreprise"
+  },
+  "navigation": {
+    "menu": "Menu",
+    "close": "Fermer"
+  },
+  "hero": {
+    "title": "Solutions Axées sur l'Innovation",
+    "subtitle": "Transformer les entreprises grâce au conseil stratégique et à l'expertise de pointe en sciences de la vie",
+    "cta": "Découvrez nos Services"
+  },
+  "footer": {
+    "description": "Leader dans le conseil aux entreprises et l'innovation en sciences de la vie.",
+    "quickLinks": "Liens rapides",
+    "services": "Services",
+    "contact": "Coordonnées",
+    "followUs": "Suivez-nous",
+    "allRightsReserved": "Tous droits réservés."
   }
 }

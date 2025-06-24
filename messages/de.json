@@ -1,5 +1,38 @@
 {
-  "Index": {
-    "hello": "Hallo, Welt!"
+  "common": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt",
+    "businessConsulting": "Unternehmensberatung",
+    "lifeSciences": "Lebenswissenschaften",
+    "caseStudies": "Fallstudien",
+    "learnMore": "Mehr erfahren",
+    "getInTouch": "Kontakt aufnehmen",
+    "readMore": "Weiterlesen",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "submit": "Senden",
+    "name": "Name",
+    "message": "Nachricht",
+    "company": "Unternehmen"
+  },
+  "navigation": {
+    "menu": "Menü",
+    "close": "Schließen"
+  },
+  "hero": {
+    "title": "Innovationsgetriebene Lösungen",
+    "subtitle": "Unternehmen durch strategische Beratung und modernste Expertise in den Lebenswissenschaften transformieren",
+    "cta": "Entdecken Sie unsere Services"
+  },
+  "footer": {
+    "description": "Wegweisend in der Unternehmensberatung und Innovation in den Lebenswissenschaften.",
+    "quickLinks": "Schnelllinks",
+    "services": "Dienstleistungen",
+    "contact": "Kontaktinfo",
+    "followUs": "Folgen Sie uns",
+    "allRightsReserved": "Alle Rechte vorbehalten."
   }
 }

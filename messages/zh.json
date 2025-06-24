@@ -1,5 +1,38 @@
 {
-  "Index": {
-    "hello": "你好，世界！"
+  "common": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务",
+    "contact": "联系我们",
+    "businessConsulting": "商业咨询",
+    "lifeSciences": "生命科学",
+    "caseStudies": "案例研究",
+    "learnMore": "了解更多",
+    "getInTouch": "联系我们",
+    "readMore": "阅读更多",
+    "email": "邮箱",
+    "phone": "电话",
+    "address": "地址",
+    "submit": "提交",
+    "name": "姓名",
+    "message": "消息",
+    "company": "公司"
+  },
+  "navigation": {
+    "menu": "菜单",
+    "close": "关闭"
+  },
+  "hero": {
+    "title": "创新驱动的解决方案",
+    "subtitle": "通过战略咨询和前沿生命科学专业知识改变企业",
+    "cta": "发现我们的服务"
+  },
+  "footer": {
+    "description": "在商业咨询和生命科学创新方面引领潮流。",
+    "quickLinks": "快速链接",
+    "services": "服务",
+    "contact": "联系信息",
+    "followUs": "关注我们",
+    "allRightsReserved": "版权所有。"
   }
 }
