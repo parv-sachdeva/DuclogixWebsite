@@ -5,8 +5,8 @@ import Image from 'next/image';
 import { ArrowLeft, Calendar, Clock, Tag, CheckCircle, Quote, Users } from 'lucide-react';
 import { getCaseStudyBySlug } from '@/lib/case-studies-data';
 
-export default function CaseStudyPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string; locale: string }> }) {
+  const { slug } = await params;
   const caseStudy = getCaseStudyBySlug(slug);
 
   if (!caseStudy) {
