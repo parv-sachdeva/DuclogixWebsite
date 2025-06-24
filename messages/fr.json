@@ -16,19 +16,199 @@
     "submit": "Envoyer",
     "name": "Nom",
     "message": "Message",
-    "company": "Entreprise"
+    "company": "Entreprise",
+    "readCaseStudy": "Lire l'étude de cas",
+    "startYourProject": "Démarrer votre projet",
+    "exploreMore": "Explorer plus",
+    "discoverCaseStudies": "Découvrir les études de cas",
+    "previousSlide": "Diapositive précédente",
+    "nextSlide": "Diapositive suivante",
+    "goToSlide": "Aller à la diapositive",
+    "newsAndClientStories": "Actualités et témoignages clients",
+    "exploreInYourGeography": "Explorer dans votre région"
   },
   "navigation": {
     "menu": "Menu",
     "close": "Fermer"
   },
-  "hero": {
-    "title": "Solutions Axées sur l'Innovation",
-    "subtitle": "Transformer les entreprises grâce au conseil stratégique et à l'expertise de pointe en sciences de la vie",
-    "cta": "Découvrez nos Services"
+  "home": {
+    "heroSlides": {
+      "slide1": {
+        "title": "Transformer la Génomique avec des Logiciels Intelligents",
+        "description": "Autonomiser les entreprises de bioinformatique avec des solutions de données personnalisées et des outils logiciels innovants.",
+        "cta": "Découvrir les études de cas"
+      },
+      "slide2": {
+        "title": "Exploiter la Puissance du Big Data",
+        "description": "De l'exploration à la prédiction, nous créons des stratégies basées sur les données qui alimentent les décisions et accélèrent la croissance.",
+        "cta": "Découvrir les études de cas"
+      },
+      "slide3": {
+        "title": "Donner du Sens aux Données",
+        "description": "Tableaux de bord interactifs et narration visuelle qui apportent de la clarté aux ensembles de données complexes.",
+        "cta": "Découvrir les études de cas"
+      }
+    },
+    "threeColumns": {
+      "insights": {
+        "title": "Insights",
+        "description": "Nous transformons des données complexes en histoires claires en utilisant des preuves du monde réel, pas des mots à la mode. Explorez comment notre travail aide les clients à extraire de la valeur des données dans tous les secteurs dans nos études de cas.",
+        "cta": "Explorer nos études de cas",
+        "items": {
+          "bioinformatics": "Bioinformatique",
+          "dataStorytelling": "Narration de données et tableaux de bord",
+          "clinicalAnalytics": "Analyses cliniques et omiques",
+          "academicCollaborations": "Collaborations académiques"
+        }
+      },
+      "services": {
+        "title": "Services",
+        "description": "Nous aidons les clients à naviguer dans le monde riche en données d'aujourd'hui en offrant des solutions de données sécurisées, évolutives et intuitives du prototype au déploiement.",
+        "cta": "Explorer nos études de cas",
+        "items": {
+          "bioinformaticsConsulting": "Conseil en bioinformatique",
+          "dataVisualization": "Visualisation de données interactive",
+          "pipelineAutomation": "Automatisation des pipelines",
+          "cloudSolutions": "Solutions cloud",
+          "dataScience": "Science des données et apprentissage automatique",
+          "dataWrangling": "Manipulation de données"
+        }
+      },      "solutions": {
+        "title": "Solutions",
+        "description": "Notre portefeuille d'outils personnalisés et de composants réutilisables accélère votre capacité à transformer les idées en insights—sans repartir de zéro.",
+        "cta": "Explorer nos études de cas",
+        "items": {
+          "rShinyApps": "Développement d'applications R Shiny",
+          "nextflowPipelines": "Pipelines Nextflow",
+          "highPerformanceComputing": "Calcul haute performance",
+          "customDashboards": "Tableaux de bord interactifs personnalisés",
+          "ngsAnalysis": "Analyse NGS"
+        }
+      },
+      "cta": {
+        "title": "Prêt à libérer le pouvoir de vos données ?",
+        "description": "Découvrez comment nos solutions analytiques sur mesure et nos outils interactifs peuvent élever votre recherche, rationaliser la prise de décision et générer un impact réel."
+      }
+    },    "partners": {
+      "title": "Avec qui nous travaillons"
+    },
+    "caseStudies": {
+      "title": "Études de cas",
+      "discoverMore": "Découvrir plus de succès de nos clients"
+    },
+    "contact": {
+      "title": "Nous contacter",
+      "subtitle": "Prêt à commencer ?",
+      "description": "Avez-vous un projet en tête ? Nous aimerions avoir de vos nouvelles. Discutons de la façon dont nous pouvons vous aider à transformer vos idées en réalité.",
+      "form": {
+        "name": "Nom complet",
+        "email": "Adresse e-mail",
+        "company": "Entreprise (Optionnel)",
+        "subject": "Sujet",
+        "message": "Message",
+        "nameRequired": "Le nom est requis",
+        "emailRequired": "L'e-mail est requis",
+        "emailInvalid": "Veuillez entrer une adresse e-mail valide",
+        "subjectRequired": "Le sujet est requis",
+        "messageRequired": "Le message est requis",        "submitting": "Envoi en cours...",
+        "submit": "Envoyer le message",
+        "success": "Merci ! Votre message a été envoyé avec succès.",
+        "error": "Quelque chose s'est mal passé. Veuillez réessayer.",
+        "thankYou": "Merci !"
+      }
+    }  },
+  "caseStudies": {
+    "title": "Études de Cas",
+    "subtitle": "Découvrez comment nous avons aidé les organisations à transformer leurs opérations avec des solutions technologiques innovantes et des insights basés sur les données.",
+    "readTime": "min de lecture",
+    "moreItems": "de plus",
+    "cta": {
+      "title": "Prêt à créer votre histoire de succès ?",
+      "description": "Rejoignez notre liste croissante de clients satisfaits qui ont transformé leurs opérations avec nos solutions innovantes.",
+      "button": "Démarrer votre projet"
+    }
   },
-  "footer": {
+  "businessConsulting": {
+    "hero": {
+      "title": "Conseil en entreprise",
+      "subtitle": "Pensez audacieusement et agissez pragmatiquement",
+      "description": "En reliant la stratégie à l'exécution et en comblant les impératifs concurrents, nous aidons les clients à penser audacieusement et à agir pragmatiquement grâce au conseil commercial et informatique stratégique.",
+      "forbesAward": "Forbes nomme CGI parmi les 'Meilleures entreprises de conseil en management au monde' pour 2024",
+      "idcMarketscape": "IDC MarketScape positionne CGI comme un 'Acteur majeur' dans son évaluation IDC MarketScape - Services de conseil commercial mondiaux 2024"
+    },
+    "capabilities": {
+      "title": "Nos Capacités",
+      "businessStrategy": {
+        "title": "Stratégie d'entreprise",
+        "content": "Planification stratégique et mise en œuvre pour stimuler la croissance organisationnelle et l'avantage concurrentiel."
+      },
+      "humanTransformation": {
+        "title": "Transformation centrée sur l'humain",
+        "content": "Gestion du changement axée sur les personnes qui place l'expérience humaine au centre des initiatives de transformation."
+      },
+      "operationalExcellence": {
+        "title": "Valeur client/citoyen et excellence opérationnelle",
+        "content": "Optimisation des opérations et des processus pour offrir une valeur exceptionnelle aux clients et aux citoyens."
+      },
+      "digitalLeadership": {
+        "title": "Leadership numérique et agenda CIO",
+        "content": "Stratégie technologique et leadership de transformation numérique pour les organisations modernes."
+      }
+    },
+    "contactExpert": {
+      "title": "Contacter notre expert",
+      "viewProfile": "Voir le profil"
+    }
+  },
+  "lifeSciences": {
+    "hero": {
+      "title": "Sciences de la vie",
+      "subtitle": "Exploiter notre vaste expertise industrielle pour accélérer la numérisation",
+      "description": "Alors que les organisations de sciences de la vie travaillent à minimiser les impacts réglementaires et concurrentiels tout en maximisant le potentiel de revenus, CGI aide les clients à réduire les coûts et à stimuler l'innovation grâce à l'automatisation et à l'optimisation des processus."
+    },
+    "capabilities": {
+      "title": "Capacités clés",
+      "description": "L'expertise et les services CGI aident les organisations des sciences de la vie à augmenter la vitesse, l'efficacité et l'innovation, tout en suivant le rythme des exigences de conformité.",
+      "items": {
+        "commercialLaunch": {
+          "title": "Lancement commercial",
+          "description": "et opérations pour simplifier la planification et l'exécution et améliorer l'efficacité du lancement"
+        },
+        "clinicalServices": {
+          "title": "Services cliniques",
+          "description": "pour réduire la durée des délais de développement de médicaments"
+        },
+        "manufacturingInnovation": {
+          "title": "Innovation manufacturière",
+          "description": "pour réaliser une optimisation de bout en bout de la chaîne d'approvisionnement, l'excellence de l'exécution manufacturière, la gestion du transport et l'ERP, y compris l'Industrie 4.0"
+        },
+        "regulatoryCompliance": {
+          "title": "Conformité réglementaire",
+          "description": "pour aider les clients à surveiller en permanence les données de sécurité des médicaments cliniques tout au long du cycle de vie du produit"
+        },
+        "outsourcing": {
+          "title": "Externalisation",
+          "description": "pour améliorer la gestion et le fonctionnement des infrastructures, suites d'applications et processus commerciaux à l'échelle de l'entreprise"
+        },        "intelligentAutomation": {
+          "title": "Automatisation intelligente",
+          "description": "pour augmenter l'efficacité des opérations en combinant l'analyse avancée avec l'IoT et l'IA pour la maintenance prédictive"
+        }
+      }
+    },
+    "contactExpert": {
+      "title": "Contacter notre expert",
+      "viewProfile": "Voir le profil"
+    },
+    "relatedSectors": {
+      "title": "Secteurs connexes"
+    }
+  },  "footer": {
     "description": "Leader dans le conseil aux entreprises et l'innovation en sciences de la vie.",
+    "company": "Entreprise",
+    "resourceCenter": "Centre de ressources",
+    "discoverMore": "Découvrir plus sur Ducologix",
+    "keepingInformed": "Vous tenir informé",
+    "subscribe": "S'abonner",
     "quickLinks": "Liens rapides",
     "services": "Services",
     "contact": "Coordonnées",

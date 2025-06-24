@@ -4,9 +4,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, Tag } from 'lucide-react';
 import { getAllCaseStudies } from '@/lib/case-studies-data';
+import { useTranslations } from 'next-intl';
 
 export default function CaseStudiesPage() {
   const caseStudies = getAllCaseStudies();
+  const t = useTranslations('caseStudies');
+  const tCommon = useTranslations('common');
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
@@ -17,15 +20,13 @@ export default function CaseStudiesPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
+    <div className="min-h-screen bg-white">      {/* Hero Section */}
       <div className="bg-gradient-to-br from-purple-800 to-purple-900 text-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">Case Studies</h1>
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6">{t('title')}</h1>
             <p className="text-xl text-purple-100 max-w-3xl mx-auto">
-              Discover how we&apos;ve helped organizations transform their operations with innovative 
-              technology solutions and data-driven insights.
+              {t('subtitle')}
             </p>
           </div>
         </div>
@@ -64,10 +65,9 @@ export default function CaseStudiesPage() {
                     <div className="flex items-center">
                       <Calendar className="h-4 w-4 mr-1" />
                       {formatDate(study.publishDate)}
-                    </div>
-                    <div className="flex items-center">
+                    </div>                    <div className="flex items-center">
                       <Clock className="h-4 w-4 mr-1" />
-                      {study.readTime}
+                      {study.readTime} {t('readTime')}
                     </div>
                   </div>
 
@@ -91,40 +91,34 @@ export default function CaseStudiesPage() {
                         <Tag className="h-3 w-3 mr-1" />
                         {tag}
                       </span>
-                    ))}
-                    {study.tags.length > 3 && (
+                    ))}                    {study.tags.length > 3 && (
                       <span className="text-gray-500 text-xs">
-                        +{study.tags.length - 3} more
+                        +{study.tags.length - 3} {t('moreItems')}
                       </span>
                     )}
-                  </div>
-
-                  {/* Read more */}
+                  </div>                  {/* Read more */}
                   <div className="flex items-center text-purple-600 group-hover:text-purple-700 font-medium">
-                    Read case study
+                    {tCommon('readCaseStudy')}
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               </Link>
             </article>
           ))}
-        </div>
-
-        {/* CTA Section */}
+        </div>        {/* CTA Section */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-purple-600 to-purple-700 rounded-2xl p-8 lg:p-12 text-white">
             <h2 className="text-3xl font-bold mb-4">
-              Ready to Create Your Success Story?
+              {t('cta.title')}
             </h2>
             <p className="text-purple-100 mb-8 max-w-2xl mx-auto">
-              Join our growing list of satisfied clients who have transformed their operations 
-              with our innovative solutions.
+              {t('cta.description')}
             </p>
             <Link
               href="/contact"
               className="inline-flex items-center bg-white text-purple-600 font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors"
             >
-              Start Your Project
+              {t('cta.button')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>

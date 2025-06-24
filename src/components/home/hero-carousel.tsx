@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface CarouselSlide {
   title: string;
@@ -17,6 +17,7 @@ interface HeroCarouselProps {
 
 const HeroCarousel = ({ carouselSlides }: HeroCarouselProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const t = useTranslations('common');
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -86,20 +87,18 @@ const HeroCarousel = ({ carouselSlides }: HeroCarouselProps) => {
                 </div>
               </div>
             </div>
-          ))}
-
-          {/* Navigation buttons */}
+          ))}          {/* Navigation buttons */}
           <button
             onClick={prevSlide}
             className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all hover:scale-105 z-10"
-            aria-label="Previous slide"
+            aria-label={t('previousSlide')}
           >
             <ChevronLeft className="h-6 w-6 text-gray-700" />
           </button>
           <button
             onClick={nextSlide}
             className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all hover:scale-105 z-10"
-            aria-label="Next slide"
+            aria-label={t('nextSlide')}
           >
             <ChevronRight className="h-6 w-6 text-gray-700" />
           </button>
@@ -112,7 +111,7 @@ const HeroCarousel = ({ carouselSlides }: HeroCarouselProps) => {
                 onClick={() => setCurrentSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all ${index === currentSlide ? 'bg-white' : 'bg-white/50'
                   }`}
-                aria-label={`Go to slide ${index + 1}`}
+                aria-label={`${t('goToSlide')} ${index + 1}`}
               />
             ))}
           </div>

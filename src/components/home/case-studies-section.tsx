@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface CaseStudy {
   slug: string;
@@ -16,10 +17,12 @@ interface CaseStudiesSectionProps {
 }
 
 const CaseStudiesSection = ({ caseStudies }: CaseStudiesSectionProps) => {
+  const t = useTranslations('home.caseStudies');
+
   return (
     <section id="case-studies" className="py-16 lg:py-24 bg-gradient-to-br from-purple-800 to-purple-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-12">Case studies</h2>
+        <h2 className="text-3xl lg:text-4xl font-bold mb-12">{t('title')}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {caseStudies.map((study, index) => (
             <Link
@@ -47,13 +50,12 @@ const CaseStudiesSection = ({ caseStudies }: CaseStudiesSectionProps) => {
               </div>
             </Link>
           ))}
-        </div>
-        <div className="mt-12 text-center">
+        </div>        <div className="mt-12 text-center">
           <Link
             href="/case-studies"
             className="inline-flex items-center text-white font-semibold hover:text-gray-200 transition-colors group"
           >
-            Discover more of our clients&apos; successes
+            {t('discoverMore')}
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>

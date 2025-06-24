@@ -16,22 +16,203 @@
     "submit": "Senden",
     "name": "Name",
     "message": "Nachricht",
-    "company": "Unternehmen"
+    "company": "Unternehmen",
+    "readCaseStudy": "Fallstudie lesen",
+    "startYourProject": "Ihr Projekt starten",
+    "exploreMore": "Mehr entdecken",
+    "discoverCaseStudies": "Fallstudien entdecken",
+    "previousSlide": "Vorherige Folie",
+    "nextSlide": "Nächste Folie",
+    "goToSlide": "Zur Folie gehen",
+    "newsAndClientStories": "Neuigkeiten und Kundengeschichten",
+    "exploreInYourGeography": "In Ihrer Region erkunden"
   },
   "navigation": {
     "menu": "Menü",
     "close": "Schließen"
   },
-  "hero": {
-    "title": "Innovationsgetriebene Lösungen",
-    "subtitle": "Unternehmen durch strategische Beratung und modernste Expertise in den Lebenswissenschaften transformieren",
-    "cta": "Entdecken Sie unsere Services"
+  "home": {
+    "heroSlides": {
+      "slide1": {
+        "title": "Genomik mit intelligenter Software transformieren",
+        "description": "Bioinformatik-Unternehmen mit maßgeschneiderten Datenlösungen und innovativen Software-Tools stärken.",
+        "cta": "Fallstudien entdecken"
+      },
+      "slide2": {
+        "title": "Die Macht von Big Data nutzen",
+        "description": "Von der Erkundung bis zur Vorhersage schaffen wir datengesteuerte Strategien, die Entscheidungen befeuern und Wachstum beschleunigen.",
+        "cta": "Fallstudien entdecken"
+      },
+      "slide3": {
+        "title": "Daten verständlich machen",
+        "description": "Interaktive Dashboards und visuelles Storytelling, die Klarheit in komplexe Datensätze bringen.",
+        "cta": "Fallstudien entdecken"
+      }
+    },
+    "threeColumns": {
+      "insights": {
+        "title": "Erkenntnisse",
+        "description": "Wir verwandeln komplexe Daten in klare Geschichten mit realen Beweisen, nicht mit Schlagwörtern. Entdecken Sie, wie unsere Arbeit Kunden dabei hilft, Wert aus Daten in verschiedenen Sektoren zu extrahieren, in unseren Fallstudien.",
+        "cta": "Unsere Fallstudien erkunden",
+        "items": {
+          "bioinformatics": "Bioinformatik",
+          "dataStorytelling": "Daten-Storytelling & Dashboards",
+          "clinicalAnalytics": "Klinische und Omik-Analysen",
+          "academicCollaborations": "Akademische Kooperationen"
+        }
+      },
+      "services": {
+        "title": "Dienstleistungen",
+        "description": "Wir helfen Kunden dabei, sich in der heutigen datenreichen Welt zurechtzufinden, indem wir sichere, skalierbare und intuitive Datenlösungen vom Prototyp bis zur Bereitstellung anbieten.",
+        "cta": "Unsere Fallstudien erkunden",
+        "items": {
+          "bioinformaticsConsulting": "Bioinformatik-Beratung",
+          "dataVisualization": "Interaktive Datenvisualisierung",
+          "pipelineAutomation": "Pipeline-Automatisierung",
+          "cloudSolutions": "Cloud-Lösungen",
+          "dataScience": "Data Science & Machine Learning",
+          "dataWrangling": "Datenaufbereitung"
+        }
+      },      "solutions": {
+        "title": "Lösungen",
+        "description": "Unser Portfolio aus maßgeschneiderten Tools und wiederverwendbaren Komponenten beschleunigt Ihre Fähigkeit, Ideen in Erkenntnisse zu verwandeln—ohne von vorne zu beginnen.",
+        "cta": "Unsere Fallstudien erkunden",
+        "items": {
+          "rShinyApps": "R Shiny App-Entwicklung",
+          "nextflowPipelines": "Nextflow-Pipelines",
+          "highPerformanceComputing": "Hochleistungsrechnen",
+          "customDashboards": "Benutzerdefinierte interaktive Dashboards",
+          "ngsAnalysis": "NGS-Analyse"
+        }
+      },
+      "cta": {
+        "title": "Bereit, die Macht Ihrer Daten zu entfesseln?",
+        "description": "Entdecken Sie, wie unsere maßgeschneiderten Analyselösungen und interaktiven Tools Ihre Forschung verbessern, Entscheidungsfindung rationalisieren und echte Wirkung erzielen können."
+      }    },
+    "partners": {
+      "title": "Mit wem wir arbeiten"
+    },
+    "caseStudies": {
+      "title": "Fallstudien",
+      "discoverMore": "Entdecken Sie mehr Erfolge unserer Kunden"
+    },
+    "contact": {
+      "title": "Kontaktieren Sie uns",
+      "subtitle": "Bereit anzufangen?",
+      "description": "Haben Sie ein Projekt im Kopf? Wir würden gerne von Ihnen hören. Lassen Sie uns besprechen, wie wir Ihnen helfen können, Ihre Ideen in die Realität umzusetzen.",
+      "form": {
+        "name": "Vollständiger Name",
+        "email": "E-Mail-Adresse",
+        "company": "Unternehmen (Optional)",
+        "subject": "Betreff",
+        "message": "Nachricht",
+        "nameRequired": "Name ist erforderlich",
+        "emailRequired": "E-Mail ist erforderlich",
+        "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+        "subjectRequired": "Betreff ist erforderlich",
+        "messageRequired": "Nachricht ist erforderlich",
+        "submitting": "Wird gesendet...",
+        "submit": "Nachricht senden",
+        "success": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.",
+        "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+        "thankYou": "Vielen Dank!"
+      }
+    }  },
+  "businessConsulting": {
+    "hero": {
+      "title": "Unternehmensberatung",
+      "subtitle": "Mutig denken und pragmatisch handeln",
+      "description": "Durch die Verbindung von Strategie und Umsetzung und die Überbrückung konkurrierender Imperative helfen wir Kunden, mutig zu denken und pragmatisch durch Geschäfts- und strategische IT-Beratung zu handeln.",
+      "forbesAward": "Forbes nennt CGI als eines der 'Weltbesten Management-Beratungsunternehmen' für 2024",
+      "idcMarketscape": "IDC MarketScape positioniert CGI als 'Major Player' in seiner IDC MarketScape - Worldwide Business Consulting Services 2024 Vendor Assessment"
+    },
+    "capabilities": {
+      "title": "Unsere Fähigkeiten",
+      "businessStrategy": {
+        "title": "Unternehmensstrategie",
+        "content": "Strategische Planung und Umsetzung zur Förderung des Organisationswachstums und Wettbewerbsvorteils."
+      },
+      "humanTransformation": {
+        "title": "Menschenzentrierte Transformation",
+        "content": "Personenfokussiertes Change Management, das die menschliche Erfahrung in den Mittelpunkt von Transformationsinitiativen stellt."
+      },
+      "operationalExcellence": {
+        "title": "Kunden-/Bürgerwert und operative Exzellenz",
+        "content": "Optimierung von Abläufen und Prozessen zur Bereitstellung außergewöhnlicher Werte für Kunden und Bürger."
+      },
+      "digitalLeadership": {
+        "title": "Digitale Führung und CIO-Agenda",
+        "content": "Technologiestrategie und digitale Transformationsführung für moderne Organisationen."
+      }
+    },
+    "contactExpert": {
+      "title": "Unseren Experten kontaktieren",
+      "viewProfile": "Profil anzeigen"
+    }
+  },
+  "lifeSciences": {
+    "hero": {
+      "title": "Lebenswissenschaften",
+      "subtitle": "Nutzung unserer umfangreichen Branchenexpertise zur Beschleunigung der Digitalisierung",
+      "description": "Da Organisationen der Lebenswissenschaften daran arbeiten, regulatorische und wettbewerbliche Auswirkungen zu minimieren und gleichzeitig das Umsatzpotenzial zu maximieren, hilft CGI Kunden dabei, Kosten zu senken und Innovation durch Automatisierung und Prozessoptimierung voranzutreiben."
+    },
+    "capabilities": {
+      "title": "Kernkompetenzen",
+      "description": "CGI-Expertise und -Services helfen Life-Sciences-Organisationen, Geschwindigkeit, Effizienz und Innovation zu steigern und gleichzeitig mit den Compliance-Anforderungen Schritt zu halten.",
+      "items": {
+        "commercialLaunch": {
+          "title": "Kommerzielle Markteinführung",
+          "description": "und Operationen zur Vereinfachung von Planung und Ausführung und Verbesserung der Markteinführungseffizienz"
+        },
+        "clinicalServices": {
+          "title": "Klinische Dienstleistungen",
+          "description": "zur Reduzierung der Dauer von Arzneimittelentwicklungszeiten"
+        },
+        "manufacturingInnovation": {
+          "title": "Fertigungsinnovation",
+          "description": "zur Erreichung einer End-to-End-Lieferkettenoptimierung, Exzellenz bei der Fertigungsausführung, Transportmanagement und ERP, einschließlich Industrie 4.0"
+        },
+        "regulatoryCompliance": {
+          "title": "Regulatorische Compliance",
+          "description": "um Kunden dabei zu helfen, klinische Arzneimittelsicherheitsdaten während des gesamten Produktlebenszyklus kontinuierlich zu überwachen"
+        },
+        "outsourcing": {
+          "title": "Outsourcing",
+          "description": "zur Verbesserung des Managements und Betriebs unternehmensweiter Infrastrukturen, Anwendungssuiten und Geschäftsprozesse"
+        },
+        "intelligentAutomation": {
+          "title": "Intelligente Automatisierung",
+          "description": "zur Steigerung der Betriebseffizienz durch Kombination fortgeschrittener Analytik mit IoT und KI für vorausschauende Wartung"
+        }      }
+    }
+  },
+  "contactExpert": {
+    "title": "Unseren Experten kontaktieren",
+    "viewProfile": "Profil anzeigen"
+  },  "relatedSectors": {
+    "title": "Verwandte Sektoren"
+  },
+  "caseStudies": {
+    "title": "Fallstudien",
+    "subtitle": "Entdecken Sie, wie wir Organisationen dabei geholfen haben, ihre Abläufe mit innovativen Technologielösungen und datengesteuerten Erkenntnissen zu transformieren.",
+    "readTime": "Min. Lesezeit",
+    "moreItems": "weitere",
+    "cta": {
+      "title": "Bereit, Ihre Erfolgsgeschichte zu schaffen?",
+      "description": "Treten Sie unserer wachsenden Liste zufriedener Kunden bei, die ihre Abläufe mit unseren innovativen Lösungen transformiert haben.",
+      "button": "Ihr Projekt starten"
+    }
   },
   "footer": {
-    "description": "Wegweisend in der Unternehmensberatung und Innovation in den Lebenswissenschaften.",
-    "quickLinks": "Schnelllinks",
+    "description": "Führend in der Unternehmensberatung und Innovation in den Lebenswissenschaften.",
+    "company": "Unternehmen",
+    "resourceCenter": "Ressourcenzentrum",
+    "discoverMore": "Mehr über Ducologix entdecken",
+    "keepingInformed": "Sie auf dem Laufenden halten",
+    "subscribe": "Abonnieren",
+    "quickLinks": "Schnelle Links",
     "services": "Dienstleistungen",
-    "contact": "Kontaktinfo",
+    "contact": "Kontakt Info",
     "followUs": "Folgen Sie uns",
     "allRightsReserved": "Alle Rechte vorbehalten."
   }

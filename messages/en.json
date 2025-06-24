@@ -16,19 +16,202 @@
     "submit": "Submit",
     "name": "Name",
     "message": "Message",
-    "company": "Company"
+    "company": "Company",
+    "readCaseStudy": "Read case study",
+    "startYourProject": "Start Your Project",
+    "exploreMore": "Explore More",
+    "discoverCaseStudies": "Discover Case Studies",
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "goToSlide": "Go to slide",
+    "newsAndClientStories": "News and client stories",
+    "exploreInYourGeography": "Explore in your geography"
   },
   "navigation": {
     "menu": "Menu",
     "close": "Close"
   },
-  "hero": {
-    "title": "Innovation Driven Solutions",
-    "subtitle": "Transforming businesses through strategic consulting and cutting-edge life sciences expertise",
-    "cta": "Discover Our Services"
+  "home": {
+    "heroSlides": {
+      "slide1": {
+        "title": "Transforming Genomics with Intelligent Software",
+        "description": "Empowering bioinformatics enterprises with custom data solutions and innovative software tools.",
+        "cta": "Discover Case Studies"
+      },
+      "slide2": {
+        "title": "Harness the Power of Big Data",
+        "description": "From exploration to prediction, we craft data-driven strategies that fuel decisions and accelerate growth.",
+        "cta": "Discover Case Studies"
+      },
+      "slide3": {
+        "title": "Making Data Make Sense",
+        "description": "Interactive dashboards and visual storytelling that bring clarity to complex datasets.",
+        "cta": "Discover Case Studies"
+      }
+    },
+    "threeColumns": {
+      "insights": {
+        "title": "Insights",
+        "description": "We turn complex data into clear stories using real-world evidence, not buzzwords. Explore how our work helps clients extract value from data across sectors in our case studies.",
+        "cta": "Explore our Case Studies",
+        "items": {
+          "bioinformatics": "Bioinformatics",
+          "dataStorytelling": "Data Storytelling & Dashboards",
+          "clinicalAnalytics": "Clinical and Omics Analytics",
+          "academicCollaborations": "Academic Collaborations"
+        }
+      },
+      "services": {
+        "title": "Services",
+        "description": "We help clients navigate today's data-rich world by offering secure, scalable, and intuitive data solutions from prototype to deployment.",
+        "cta": "Explore our Case Studies",
+        "items": {
+          "bioinformaticsConsulting": "Bioinformatics Consulting",
+          "dataVisualization": "Interactive Data Visualization",
+          "pipelineAutomation": "Pipeline Automation",
+          "cloudSolutions": "Cloud Solutions",
+          "dataScience": "Data Science & Machine Learning",
+          "dataWrangling": "Data Wrangling"
+        }
+      },      "solutions": {
+        "title": "Solutions",
+        "description": "Our portfolio of custom-built tools and reusable components accelerates your ability to turn ideas into insight—without starting from scratch.",
+        "cta": "Explore our Case Studies",
+        "items": {
+          "rShinyApps": "R Shiny App Development",
+          "nextflowPipelines": "Nextflow Pipelines",
+          "highPerformanceComputing": "High Performance Computing",
+          "customDashboards": "Custom Interactive Dashboards",
+          "ngsAnalysis": "NGS Analysis"
+        }
+      },
+      "cta": {
+        "title": "Ready to unlock the power of your data?",
+        "description": "Discover how our tailored analytics solutions and interactive tools can elevate your research, streamline decision-making, and drive real impact."
+      }
+    },
+    "partners": {
+      "title": "Who we work with"
+    },
+    "caseStudies": {
+      "title": "Case studies",
+      "discoverMore": "Discover more of our clients' successes"
+    },
+    "contact": {
+      "title": "Contact us",
+      "subtitle": "Ready to get started?",
+      "description": "Have a project in mind? We'd love to hear from you. Let's discuss how we can help transform your ideas into reality.",
+      "form": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "company": "Company (Optional)",
+        "subject": "Subject",
+        "message": "Message",
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "subjectRequired": "Subject is required",
+        "messageRequired": "Message is required",        "submitting": "Sending...",
+        "submit": "Send Message",
+        "success": "Thank you! Your message has been sent successfully.",
+        "error": "Something went wrong. Please try again.",
+        "thankYou": "Thank you!"
+      }
+    }
+  },
+  "caseStudies": {
+    "title": "Case Studies",
+    "subtitle": "Discover how we've helped organizations transform their operations with innovative technology solutions and data-driven insights.",
+    "readTime": "min read",
+    "moreItems": "more",
+    "cta": {
+      "title": "Ready to Create Your Success Story?",
+      "description": "Join our growing list of satisfied clients who have transformed their operations with our innovative solutions.",
+      "button": "Start Your Project"
+    }
+  },
+  "businessConsulting": {
+    "hero": {
+      "title": "Business consulting",
+      "subtitle": "Think boldly and act pragmatically",
+      "description": "By connecting strategy to execution and bridging competing imperatives, we help clients think boldly and act pragmatically through business and strategic IT consulting.",
+      "forbesAward": "Forbes names CGI as one of World's Best Management Consulting Firms' for 2024",
+      "idcMarketscape": "IDC MarketScape positions CGI as a 'Major Player' in its IDC MarketScape - Worldwide Business Consulting Services 2024 Vendor Assessment"
+    },
+    "capabilities": {
+      "title": "Our Capabilities",
+      "businessStrategy": {
+        "title": "Business strategy",
+        "content": "Strategic planning and implementation to drive organizational growth and competitive advantage."
+      },
+      "humanTransformation": {
+        "title": "Human-centered transformation",
+        "content": "People-focused change management that puts human experience at the center of transformation initiatives."
+      },
+      "operationalExcellence": {
+        "title": "Customer/citizen value and operational excellence",
+        "content": "Optimizing operations and processes to deliver exceptional value to customers and citizens."
+      },
+      "digitalLeadership": {
+        "title": "Digital leadership and CIO agenda",
+        "content": "Technology strategy and digital transformation leadership for modern organizations."
+      }
+    },
+    "contactExpert": {
+      "title": "Contact our expert",
+      "viewProfile": "View profile"
+    }
+  },
+  "lifeSciences": {
+    "hero": {
+      "title": "Life sciences",
+      "subtitle": "Leveraging our extensive industry expertise to accelerate digitization",
+      "description": "As life sciences organizations work to minimize regulatory and competitive impacts while maximizing revenue potential, CGI helps clients reduce costs and drive innovation through automation and process optimization."
+    },
+    "capabilities": {
+      "title": "Key capabilities",
+      "description": "CGI expertise and services help life sciences organizations increase speed, efficiency and innovation, while keeping pace with compliance demands.",
+      "items": {
+        "commercialLaunch": {
+          "title": "Commercial launch",
+          "description": "and operations to simplify planning and execution and improve launch efficiency"
+        },
+        "clinicalServices": {
+          "title": "Clinical services",
+          "description": "to reduce the duration of drug development timelines"
+        },
+        "manufacturingInnovation": {
+          "title": "Manufacturing innovation",
+          "description": "to achieve end-to-end supply chain optimization, manufacturing execution excellence, transport management and ERP, including Industry 4.0"
+        },
+        "regulatoryCompliance": {
+          "title": "Regulatory compliance",
+          "description": "to help clients continuously monitor clinical drug safety data across the entire product life cycle"
+        },
+        "outsourcing": {
+          "title": "Outsourcing",
+          "description": "to improve the management and operation of company-wide infrastructures, application suites and business processes"
+        },
+        "intelligentAutomation": {
+          "title": "Intelligent automation",
+          "description": "to increase efficiency of operations by combining advanced analytics with IoT and AI for predictive maintenance"
+        }
+      }
+    },
+    "contactExpert": {
+      "title": "Contact our expert",
+      "viewProfile": "View profile"
+    },    "relatedSectors": {
+      "title": "Related sectors"
+    }
   },
   "footer": {
     "description": "Leading the way in business consulting and life sciences innovation.",
+    "company": "Company",
+    "resourceCenter": "Resource center",
+    "discoverMore": "Discover more about Ducologix",
+    "keepingInformed": "Keeping you informed",
+    "subscribe": "Subscribe",
     "quickLinks": "Quick Links",
     "services": "Services",
     "contact": "Contact Info",

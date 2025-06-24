@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import {
   Lightbulb,
   Network,
@@ -18,66 +19,69 @@ import {
   Smartphone
 } from 'lucide-react';
 
-// Data configuration for better maintainability
-const sectionsData = [
-  {
-    id: 'insights',
-    icon: Lightbulb,
-    title: 'Insights',
-    description: 'We turn complex data into clear stories using real-world evidence, not buzzwords. Explore how our work helps clients extract value from data across sectors in our case studies.',
-    gradient: 'from-blue-500 to-cyan-500',
-    hoverGradient: 'from-blue-600 to-cyan-600',
-    items: [
-      { name: 'Bioinformatics', icon: Brain, href: '#' },
-      { name: 'Data Storytelling & Dashboards', icon: BarChart3, href: '#' },
-      { name: 'Clinical and Omics Analytics', icon: Heart, href: '#' },
-      { name: 'Academic Collaborations', icon: Users, href: '#' },    ],
-    ctaText: 'Explore our Case Studies',
-    ctaHref: '#case-studies',
-    accentColor: 'text-blue-600 hover:text-blue-700'
-  },
-  {
-    id: 'services',
-    icon: Network,
-    title: 'Services',
-    description: 'We help clients navigate today\'s data-rich world by offering secure, scalable, and intuitive data solutions from prototype to deployment.',
-    gradient: 'from-emerald-500 to-teal-500',
-    hoverGradient: 'from-emerald-600 to-teal-600',
-    items: [
-      { name: 'Bioinformatics Consulting', icon: Brain, href: '#' },
-      { name: 'Interactive Data Visualization', icon: BarChart3, href: '#' },
-      { name: 'Pipeline Automation', icon: Settings, href: '#' },
-      { name: 'Cloud Solutions', icon: Cloud, href: '#' },
-      { name: 'Data Science & Machine Learning', icon: Cpu, href: '#' },
-      { name: 'Data Wrangling', icon: Grid3X3, href: '#' }
-    ],
-    ctaText: 'Explore our Case Studies',
-    ctaHref: '#case-studies',
-    accentColor: 'text-emerald-600 hover:text-emerald-700'
-  },
-  {
-    id: 'solutions',
-    icon: Puzzle,
-    title: 'Solutions',
-    description: 'Our portfolio of custom-built tools and reusable components accelerates your ability to turn ideas into insight—without starting from scratch.',
-    gradient: 'from-violet-500 to-purple-500',
-    hoverGradient: 'from-violet-600 to-purple-600',
-    items: [
-      { name: 'R Shiny App Development', icon: Smartphone, href: '#' },
-      { name: 'Nextflow Pipelines', icon: Network, href: '#' },
-      { name: 'High Performance Computing', icon: Zap, href: '#' },
-      { name: 'Custom Interactive Dashboards', icon: BarChart3, href: '#' },
-      { name: 'NGS Analysis', icon: Brain, href: '#' }
-    ],
-    ctaText: 'Explore our Case Studies',
-    ctaHref: '#case-studies',
-    accentColor: 'text-violet-600 hover:text-violet-700'
-  }
-];
-
 const ThreeColumnSection = () => {
   const [visibleItems, setVisibleItems] = useState<string[]>([]);
   const sectionRef = useRef<HTMLElement>(null);
+  const t = useTranslations('home.threeColumns');
+  const tCommon = useTranslations('common');
+
+  // Data configuration with translations
+  const sectionsData = [
+    {
+      id: 'insights',
+      icon: Lightbulb,
+      title: t('insights.title'),
+      description: t('insights.description'),
+      gradient: 'from-blue-500 to-cyan-500',
+      hoverGradient: 'from-blue-600 to-cyan-600',
+      items: [
+        { name: t('insights.items.bioinformatics'), icon: Brain, href: '#' },
+        { name: t('insights.items.dataStorytelling'), icon: BarChart3, href: '#' },
+        { name: t('insights.items.clinicalAnalytics'), icon: Heart, href: '#' },
+        { name: t('insights.items.academicCollaborations'), icon: Users, href: '#' },
+      ],
+      ctaText: t('insights.cta'),
+      ctaHref: '#case-studies',
+      accentColor: 'text-blue-600 hover:text-blue-700'
+    },
+    {
+      id: 'services',
+      icon: Network,
+      title: t('services.title'),
+      description: t('services.description'),
+      gradient: 'from-emerald-500 to-teal-500',
+      hoverGradient: 'from-emerald-600 to-teal-600',
+      items: [
+        { name: t('services.items.bioinformaticsConsulting'), icon: Brain, href: '#' },
+        { name: t('services.items.dataVisualization'), icon: BarChart3, href: '#' },
+        { name: t('services.items.pipelineAutomation'), icon: Settings, href: '#' },
+        { name: t('services.items.cloudSolutions'), icon: Cloud, href: '#' },
+        { name: t('services.items.dataScience'), icon: Cpu, href: '#' },
+        { name: t('services.items.dataWrangling'), icon: Grid3X3, href: '#' }
+      ],
+      ctaText: t('services.cta'),
+      ctaHref: '#case-studies',
+      accentColor: 'text-emerald-600 hover:text-emerald-700'
+    },
+    {
+      id: 'solutions',
+      icon: Puzzle,
+      title: t('solutions.title'),
+      description: t('solutions.description'),
+      gradient: 'from-violet-500 to-purple-500',
+      hoverGradient: 'from-violet-600 to-purple-600',
+      items: [
+        { name: t('solutions.items.rShinyApps'), icon: Smartphone, href: '#' },
+        { name: t('solutions.items.nextflowPipelines'), icon: Network, href: '#' },
+        { name: t('solutions.items.highPerformanceComputing'), icon: Zap, href: '#' },
+        { name: t('solutions.items.customDashboards'), icon: BarChart3, href: '#' },
+        { name: t('solutions.items.ngsAnalysis'), icon: Brain, href: '#' }
+      ],
+      ctaText: t('solutions.cta'),
+      ctaHref: '#case-studies',
+      accentColor: 'text-violet-600 hover:text-violet-700'
+    }
+  ];
 
   // Intersection Observer for scroll animations
   useEffect(() => {
@@ -187,16 +191,14 @@ const ThreeColumnSection = () => {
               </div>
             );
           })}
-        </div>
-
-        {/* Additional Call-to-Action Section */}
+        </div>        {/* Additional Call-to-Action Section */}
         <div className="mt-16 text-center">
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Ready to unlock the power of your data?
+              {t('cta.title')}
             </h3>
             <p className="text-gray-600 mb-6 text-lg">
-              Discover how our tailored analytics solutions and interactive tools can elevate your research, streamline decision-making, and drive real impact.
+              {t('cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
@@ -209,7 +211,7 @@ const ThreeColumnSection = () => {
                 className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:shadow-lg hover:scale-105"
                 type="button"
               >
-                Get Started Today
+                {tCommon('startYourProject')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
             </div>

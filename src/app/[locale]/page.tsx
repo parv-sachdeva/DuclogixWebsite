@@ -8,26 +8,26 @@ import CaseStudiesSection from '@/components/home/case-studies-section';
 import { getAllCaseStudies } from '@/lib/case-studies-data';
 
 const Website = () => {
-  const t = useTranslations('Index');
+  const t = useTranslations('home');
 
-  // Carousel data
+  // Carousel data with translations
   const carouselSlides = [
     {
-      title: "Transforming Genomics with Intelligent Software",
-      description: "Empowering bioinformatics enterprises with custom data solutions and innovative software tools.",
-      cta: "Discover Case Studies",
+      title: t('heroSlides.slide1.title'),
+      description: t('heroSlides.slide1.description'),
+      cta: t('heroSlides.slide1.cta'),
       imageUrl: "/c1.svg"
     },
     {
-      title: "Harness the Power of Big Data",
-      description: "From exploration to prediction, we craft data-driven strategies that fuel decisions and accelerate growth.",
-      cta: "Discover Case Studies",
+      title: t('heroSlides.slide2.title'),
+      description: t('heroSlides.slide2.description'),
+      cta: t('heroSlides.slide2.cta'),
       imageUrl: "/c2.svg"
     },
     {
-      title: "Making Data Make Sense",
-      description: "Interactive dashboards and visual storytelling that bring clarity to complex datasets.",
-      cta: "Discover Case Studies",
+      title: t('heroSlides.slide3.title'),
+      description: t('heroSlides.slide3.description'),
+      cta: t('heroSlides.slide3.cta'),
       imageUrl: "/c3.svg"
     }
   ];
@@ -51,10 +51,8 @@ const Website = () => {
     imageUrl: study.imageUrl,
     slug: study.slug
   }));
-
   return (
     <div className="min-h-screen bg-white">
-      <h1>{t('hello')}</h1>
       <HeroCarousel carouselSlides={carouselSlides} />
       <ThreeColumnSection />
       <CaseStudiesSection caseStudies={caseStudies} />

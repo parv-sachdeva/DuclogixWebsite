@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { ChevronDown, ChevronUp, Send } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface ContactFormData {
   name: string;
@@ -20,6 +21,7 @@ const ContactSection: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const t = useTranslations('home.contact');
 
   const {
     register,
@@ -50,10 +52,9 @@ const ContactSection: React.FC = () => {
         }, 3000);
       } else {
         throw new Error('Failed to submit form');
-      }
-    } catch (error) {
+      }    } catch (error) {
       console.error('Error submitting form:', error);
-      alert('Failed to send message. Please try again.');
+      alert(t('form.error'));
     } finally {
       setIsSubmitting(false);
     }
@@ -61,10 +62,9 @@ const ContactSection: React.FC = () => {
 
   return (
     <section id='contact' className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-      <div className="container mx-auto px-6 py-16">
-        <div className="text-center mb-8">
+      <div className="container mx-auto px-6 py-16">        <div className="text-center mb-8">
           <h2 className="text-4xl md:text-5xl font-light mb-8">
-            How can we help?
+            {t('title')}
           </h2>
           
           <Button
@@ -73,7 +73,7 @@ const ContactSection: React.FC = () => {
             size="lg"
             className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-medium transition-all duration-300"
           >
-            Contact
+            {t('title')}
             {isExpanded ? (
               <ChevronUp className="ml-2 h-4 w-4" />
             ) : (
@@ -107,97 +107,87 @@ const ContactSection: React.FC = () => {
                       />
                     </svg>
                   </div>
-                </div>
-                <h3 className="text-2xl font-semibold mb-2">Thank you!</h3>
+                </div>                <h3 className="text-2xl font-semibold mb-2">{t('form.thankYou')}</h3>
                 <p className="text-white/80">
-                  Your message has been sent successfully. We&apos;ll get back to you soon.
+                  {t('form.success')}
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">                  <div>
                     <Label htmlFor="name" className="text-white mb-2 block">
-                      Name *
+                      {t('form.name')} *
                     </Label>
                     <Input
                       id="name"
-                      {...register('name', { required: 'Name is required' })}
+                      {...register('name', { required: t('form.nameRequired') })}
                       className="bg-white/20 border-white/30 text-white placeholder:text-white/60 focus:border-white"
-                      placeholder="Your name"
+                      placeholder={t('form.name')}
                     />
                     {errors.name && (
                       <p className="text-red-300 text-sm mt-1">{errors.name.message}</p>
                     )}
-                  </div>
-
-                  <div>
+                  </div>                  <div>
                     <Label htmlFor="email" className="text-white mb-2 block">
-                      Email *
+                      {t('form.email')} *
                     </Label>
                     <Input
                       id="email"
                       type="email"
                       {...register('email', {
-                        required: 'Email is required',
+                        required: t('form.emailRequired'),
                         pattern: {
                           value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                          message: 'Invalid email address'
+                          message: t('form.emailInvalid')
                         }
                       })}
                       className="bg-white/20 border-white/30 text-white placeholder:text-white/60 focus:border-white"
-                      placeholder="your.email@example.com"
+                      placeholder={t('form.email')}
                     />
                     {errors.email && (
                       <p className="text-red-300 text-sm mt-1">{errors.email.message}</p>
                     )}
                   </div>
-                </div>
-
-                <div>
+                </div>                <div>
                   <Label htmlFor="company" className="text-white mb-2 block">
-                    Company
+                    {t('form.company')}
                   </Label>
                   <Input
                     id="company"
                     {...register('company')}
                     className="bg-white/20 border-white/30 text-white placeholder:text-white/60 focus:border-white"
-                    placeholder="Your company name"
+                    placeholder={t('form.company')}
                   />
                 </div>
 
                 <div>
                   <Label htmlFor="subject" className="text-white mb-2 block">
-                    Subject *
+                    {t('form.subject')} *
                   </Label>
                   <Input
                     id="subject"
-                    {...register('subject', { required: 'Subject is required' })}
+                    {...register('subject', { required: t('form.subjectRequired') })}
                     className="bg-white/20 border-white/30 text-white placeholder:text-white/60 focus:border-white"
-                    placeholder="What can we help you with?"
+                    placeholder={t('form.subject')}
                   />
                   {errors.subject && (
                     <p className="text-red-300 text-sm mt-1">{errors.subject.message}</p>
                   )}
-                </div>
-
-                <div>
+                </div>                <div>
                   <Label htmlFor="message" className="text-white mb-2 block">
-                    Message *
+                    {t('form.message')} *
                   </Label>
                   <Textarea
                     id="message"
-                    {...register('message', { required: 'Message is required' })}
+                    {...register('message', { required: t('form.messageRequired') })}
                     rows={4}
                     className="bg-white/20 border-white/30 text-white placeholder:text-white/60 focus:border-white resize-none"
-                    placeholder="Tell us more about your needs..."
+                    placeholder={t('form.message')}
                   />
                   {errors.message && (
                     <p className="text-red-300 text-sm mt-1">{errors.message.message}</p>
                   )}
-                </div>
-
-                <Button
+                </div>                <Button
                   type="submit"
                   disabled={isSubmitting}
                   className="w-full bg-white text-blue-600 hover:bg-gray-100 font-medium py-3 rounded-lg transition-colors duration-200"
@@ -205,11 +195,11 @@ const ContactSection: React.FC = () => {
                   {isSubmitting ? (
                     <>
                       <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600 mr-2"></div>
-                      Sending...
+                      {t('form.submitting')}
                     </>
                   ) : (
                     <>
-                      Send Message
+                      {t('form.submit')}
                       <Send className="ml-2 h-4 w-4" />
                     </>
                   )}
