@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import {useTranslations} from 'next-intl';
 import HeroCarousel from '@/components/home/hero-carousel';
 import ThreeColumnSection from '@/components/home/three-column-section';
 import PartnersSection from '@/components/home/partners-section';
@@ -7,6 +8,8 @@ import CaseStudiesSection from '@/components/home/case-studies-section';
 import { getAllCaseStudies } from '@/lib/case-studies-data';
 
 const Website = () => {
+  const t = useTranslations('Index');
+
   // Carousel data
   const carouselSlides = [
     {
@@ -51,6 +54,7 @@ const Website = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <h1>{t('hello')}</h1>
       <HeroCarousel carouselSlides={carouselSlides} />
       <ThreeColumnSection />
       <CaseStudiesSection caseStudies={caseStudies} />
