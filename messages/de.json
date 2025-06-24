@@ -191,8 +191,7 @@
     "viewProfile": "Profil anzeigen"
   },  "relatedSectors": {
     "title": "Verwandte Sektoren"
-  },
-  "caseStudies": {
+  },  "caseStudies": {
     "title": "Fallstudien",
     "subtitle": "Entdecken Sie, wie wir Organisationen dabei geholfen haben, ihre Abläufe mit innovativen Technologielösungen und datengesteuerten Erkenntnissen zu transformieren.",
     "readTime": "Min. Lesezeit",
@@ -201,7 +200,60 @@
       "title": "Bereit, Ihre Erfolgsgeschichte zu schaffen?",
       "description": "Treten Sie unserer wachsenden Liste zufriedener Kunden bei, die ihre Abläufe mit unseren innovativen Lösungen transformiert haben.",
       "button": "Ihr Projekt starten"
-    }
+    },
+    "bulkrnaApp": {
+      "title": "Bulk RNA-seq Analyse-Anwendung",
+      "company": "BioGenomics Research Institut",
+      "summary": "Entwicklung einer umfassenden webbasierten Plattform für Bulk RNA-seq Datenanalyse mit erweiterten statistischen Algorithmen und interaktiven Visualisierungen für Genomikforscher.",
+      "readTime": "8",
+      "tags": "Bioinformatik, RNA-seq, Webanwendung",
+      "challenge": "Das BioGenomics Research Institut benötigte eine benutzerfreundliche Plattform für die Analyse großer RNA-seq-Datensätze. Ihre bestehenden Arbeitsabläufe waren fragmentiert und erforderten umfangreiche manuelle Verarbeitung, was zu Ineffizienzen in ihrer Forschungspipeline führte.",
+      "solution": "Wir entwickelten eine vollständig integrierte webbasierte Anwendung mit React und Next.js Frontend, angetrieben von einer robusten Python FastAPI Backend. Die Plattform integriert bewährte bioinformatische Tools wie DESeq2 und edgeR für die Differentialexpressionsanalyse und bietet interaktive D3.js-Visualisierungen zur Datenexploration.",
+      "results": "Die Plattform reduzierte die Analysezeit um 75% und ermöglichte es Forschern, komplexe RNA-seq-Analysen ohne umfangreiche Programmierkenntnisse durchzuführen. Das Institut meldete eine 300%ige Steigerung der Forschungsproduktivität und konnte mehr Kooperationsprojekte übernehmen.",
+      "testimonial": "Die von Ducologix entwickelte RNA-seq-Analyseplattform hat unsere Forschungsfähigkeiten revolutioniert. Was früher Wochen dauerte, können wir jetzt in Stunden erledigen."
+    },
+    "scrnaApp": {
+      "title": "Einzelzell-RNA-seq Analyse-Suite",
+      "company": "Cellular Dynamics Laboratory",
+      "summary": "Aufbau einer fortschrittlichen Einzelzell-RNA-seq-Analysepipeline mit maschinellem Lernen für die Zelltyp-Identifikation und Trajektorienanalyse für die Krebsforschung.",
+      "readTime": "10",
+      "tags": "Einzelzell-Genomik, Machine Learning, Vue.js",
+      "challenge": "Cellular Dynamics Laboratory verarbeitete große Einzelzell-RNA-seq-Datensätze manuell mit verschiedenen unverbundenen Tools, was zu inkonsistenten Ergebnissen und langwierigen Analysezyklen führte. Sie benötigten eine einheitliche Plattform für ihre Krebsforschungsinitiative.",
+      "solution": "Unsere Lösung nutzte Vue.js für eine reaktionsschnelle Benutzeroberfläche, integriert mit Python-basierten Analysemotoren unter Verwendung von Scanpy und Seurat. Wir implementierten maschinelle Lernalgorithmen mit scikit-learn und TensorFlow für erweiterte Zellklassifizierung und Trajektorienanalyse, alles in Docker-Containern bereitgestellt.",
+      "results": "Das Labor erzielte eine 400%ige Verbesserung der Verarbeitungsgeschwindigkeit und identifizierte neue Zellsubpopulationen, die zuvor übersehen wurden. Die standardisierte Pipeline führte zu reproduzierbaren Ergebnissen in verschiedenen Forschungsprojekten.",
+      "testimonial": "Die scRNA-seq-Suite hat unser Verständnis von Zellheterogenität in Tumoren verändert. Die automatisierten maschinellen Lernpipelines haben Einsichten aufgedeckt, die mit manuellen Methoden unmöglich gewesen wären."
+    },
+    "biodiversityApp": {
+      "title": "Biodiversitäts-Überwachungssystem",
+      "company": "Conservation Alliance International",
+      "summary": "Entwicklung einer mobilen und webbasierten Anwendung für Echtzeit-Biodiversitätsüberwachung mit GIS-Integration und KI-gestützter Artenerkennung für Naturschutzprojekte.",
+      "readTime": "12",
+      "tags": "Naturschutz, Mobile App, KI, GIS",
+      "challenge": "Conservation Alliance International sammelte Biodiversitätsdaten mit veralteten Methoden, was zu verzögerten Berichten und verpassten Gelegenheiten für zeitnahe Naturschutzmaßnahmen führte. Sie benötigten eine moderne, mobile-first Lösung für Feldforscher.",
+      "solution": "Wir entwickelten eine umfassende Lösung mit React Native für mobile Datensammlung, Angular für webbasierte Dashboards und Node.js/Express für Backend-Services. Das System umfasst GIS-Integration für räumliche Analyse, TensorFlow-betriebene Bilderkennung für Artenidentifikation und AWS-gehostete Echtzeit-Datenverarbeitung.",
+      "results": "Das System ermöglichte eine 500%ige Steigerung der Datensammlungseffizienz und reduzierte die Berichtszeit von Monaten auf Tage. Die KI-gestützte Artenerkennung erreichte eine 95%ige Genauigkeit und ermöglichte es auch nicht-erfahrenen Freiwilligen, wertvolle Daten beizutragen.",
+      "testimonial": "Das Biodiversitäts-Überwachungssystem hat unsere Naturschutzefforts revolutioniert. Wir können jetzt in Echtzeit auf Bedrohungen reagieren und fundierte Entscheidungen mit aktuellen Daten treffen."
+    },
+    "rnaseqPipeline": {
+      "title": "Automatisierte RNA-seq Nextflow-Pipeline",
+      "company": "Precision Medicine Consortium",
+      "summary": "Implementierung einer vollautomatisierten, skalierbaren RNA-seq-Verarbeitungspipeline mit Nextflow für Hochdurchsatz-Genomikanalyse in Cloud-Umgebungen.",
+      "readTime": "6",
+      "tags": "Nextflow, Cloud Computing, Pipeline-Automatisierung",
+      "challenge": "Das Precision Medicine Consortium verarbeitete RNA-seq-Proben manuell mit inkonsistenten Protokollen und langen Wartezeiten. Sie benötigten eine vollautomatisierte, reproduzierbare Pipeline, die sich an schwankende Arbeitslasten anpassen konnte.",
+      "solution": "Wir designten eine robuste Nextflow-Pipeline, die Qualitätskontrolle, Ausrichtung (STAR), Quantifizierung (RSEM) und Differentialexpressionsanalyse (DESeq2) integriert. Die Pipeline wurde für AWS Batch mit Docker/Singularity-Containern für maximale Reproduzierbarkeit und Skalierbarkeit optimiert.",
+      "results": "Das Konsortium erreichte eine 10-fache Reduzierung der Verarbeitungszeit und eliminierte manuelle Fehler vollständig. Die automatisierte Pipeline verarbeitet jetzt über 1.000 Proben pro Monat mit konsistenten, reproduzierbaren Ergebnissen.",      "testimonial": "Die Nextflow-Pipeline hat unsere Genomik-Operationen transformiert. Was früher Wochen manueller Arbeit erforderte, läuft jetzt automatisch mit perfekter Reproduzierbarkeit."
+    },
+    "challenge": "Die Herausforderung",
+    "solution": "Unsere Lösung",
+    "technologiesUsed": "Verwendete Technologien",
+    "resultsAndImpact": "Ergebnisse & Auswirkungen",
+    "clientTestimonial": "Kundenbewertung",
+    "researchTeam": "Forschungsteam",
+    "projectGallery": "Projektgalerie",
+    "ctaTitle": "Bereit, Ihr Projekt zu transformieren?",
+    "ctaDescription": "Lassen Sie uns besprechen, wie wir Ihnen helfen können, ähnliche Ergebnisse mit innovativen, auf Ihre Bedürfnisse zugeschnittenen Lösungen zu erzielen.",
+    "getStartedToday": "Heute anfangen"
   },
   "footer": {
     "description": "Führend in der Unternehmensberatung und Innovation in den Lebenswissenschaften.",

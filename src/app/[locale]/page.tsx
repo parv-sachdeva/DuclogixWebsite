@@ -43,11 +43,10 @@ const Website = () => {
     { name: "Sonoma Biotherapeutics", logo: "/i3.png" },
     { name: "MedGenome Labs", logo: "/i4.png" },
   ];
-
   // Case studies data from global data file
   const caseStudies = getAllCaseStudies().map(study => ({
-    company: study.company,
-    title: study.title,
+    companyKey: study.companyKey,
+    titleKey: study.titleKey,
     imageUrl: study.imageUrl,
     slug: study.slug
   }));
