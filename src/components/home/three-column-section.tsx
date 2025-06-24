@@ -6,24 +6,16 @@ import {
   Network,
   Puzzle,
   ArrowRight,
-  Building2,
-  Shield,
   Heart,
-  Factory,
-  ShoppingCart,
   Zap,
   Users,
   Settings,
-  Wifi,
   Brain,
   BarChart3,
   Cloud,
-  CreditCard,
   Cpu,
-  TrendingUp,
   Grid3X3,
-  Smartphone,
-  Store
+  Smartphone
 } from 'lucide-react';
 
 // Data configuration for better maintainability
@@ -32,57 +24,53 @@ const sectionsData = [
     id: 'insights',
     icon: Lightbulb,
     title: 'Insights',
-    description: 'We provide a global antenna based on facts, not hype, to help improve returns on your IT and business investments.',
+    description: 'We turn complex data into clear stories using real-world evidence, not buzzwords. Explore how our work helps clients extract value from data across sectors in our case studies.',
     gradient: 'from-blue-500 to-cyan-500',
     hoverGradient: 'from-blue-600 to-cyan-600',
     items: [
-      { name: 'Banking', icon: Building2, href: '/industries/banking' },
-      { name: 'Government', icon: Shield, href: '/industries/government' },
-      { name: 'Health', icon: Heart, href: '/industries/health' },
-      { name: 'Manufacturing', icon: Factory, href: '/industries/manufacturing' },
-      { name: 'Retail', icon: ShoppingCart, href: '/industries/retail' },
-      { name: 'Energy & utilities', icon: Zap, href: '/industries/energy-utilities' }
-    ],
-    ctaText: 'Explore all industries',
-    ctaHref: '/industries',
+      { name: 'Bioinformatics', icon: Brain, href: '#' },
+      { name: 'Data Storytelling & Dashboards', icon: BarChart3, href: '#' },
+      { name: 'Clinical and Omics Analytics', icon: Heart, href: '#' },
+      { name: 'Academic Collaborations', icon: Users, href: '#' },    ],
+    ctaText: 'Explore our Case Studies',
+    ctaHref: '#case-studies',
     accentColor: 'text-blue-600 hover:text-blue-700'
   },
   {
     id: 'services',
     icon: Network,
     title: 'Services',
-    description: 'We help you meet the ever-evolving digital expectations of your customers and citizens through our secure and flexible end-to-end services.',
+    description: 'We help clients navigate today\'s data-rich world by offering secure, scalable, and intuitive data solutions from prototype to deployment.',
     gradient: 'from-emerald-500 to-teal-500',
     hoverGradient: 'from-emerald-600 to-teal-600',
     items: [
-      { name: 'Business consulting', icon: Users, href: '/services/business-consulting' },
-      { name: 'Business process services', icon: Settings, href: '/services/business-process-services' },
-      { name: 'Managed IT services', icon: Wifi, href: '/services/managed-it-services' },
-      { name: 'Artificial intelligence', icon: Brain, href: '/services/artificial-intelligence' },
-      { name: 'Data analytics', icon: BarChart3, href: '/services/data-analytics' },
-      { name: 'Cloud & hybrid IT', icon: Cloud, href: '/services/cloud-hybrid-it' }
+      { name: 'Bioinformatics Consulting', icon: Brain, href: '#' },
+      { name: 'Interactive Data Visualization', icon: BarChart3, href: '#' },
+      { name: 'Pipeline Automation', icon: Settings, href: '#' },
+      { name: 'Cloud Solutions', icon: Cloud, href: '#' },
+      { name: 'Data Science & Machine Learning', icon: Cpu, href: '#' },
+      { name: 'Data Wrangling', icon: Grid3X3, href: '#' }
     ],
-    ctaText: 'Explore end-to-end services',
-    ctaHref: '/services',
+    ctaText: 'Explore our Case Studies',
+    ctaHref: '#case-studies',
     accentColor: 'text-emerald-600 hover:text-emerald-700'
   },
   {
     id: 'solutions',
     icon: Puzzle,
     title: 'Solutions',
-    description: 'Our intellectual property-based solutions help you accelerate innovation and drive operational excellence.',
+    description: 'Our portfolio of custom-built tools and reusable components accelerates your ability to turn ideas into insight—without starting from scratch.',
     gradient: 'from-violet-500 to-purple-500',
     hoverGradient: 'from-violet-600 to-purple-600',
     items: [
-      { name: 'CGI Credit Studio', icon: CreditCard, href: '/solutions/cgi-credit-studio' },
-      { name: 'CGI PulseAI', icon: Cpu, href: '/solutions/cgi-pulseai' },
-      { name: 'CGI Trade360', icon: TrendingUp, href: '/solutions/cgi-trade360' },
-      { name: 'CGI OpenGrid360', icon: Grid3X3, href: '/solutions/cgi-opengrid360' },
-      { name: 'CGI All Payments', icon: Smartphone, href: '/solutions/cgi-all-payments' },
-      { name: 'CGI Retail Suite', icon: Store, href: '/solutions/cgi-retail-suite' }
+      { name: 'R Shiny App Development', icon: Smartphone, href: '#' },
+      { name: 'Nextflow Pipelines', icon: Network, href: '#' },
+      { name: 'High Performance Computing', icon: Zap, href: '#' },
+      { name: 'Custom Interactive Dashboards', icon: BarChart3, href: '#' },
+      { name: 'NGS Analysis', icon: Brain, href: '#' }
     ],
-    ctaText: 'Explore all solutions',
-    ctaHref: '/solutions',
+    ctaText: 'Explore our Case Studies',
+    ctaHref: '#case-studies',
     accentColor: 'text-violet-600 hover:text-violet-700'
   }
 ];
@@ -133,8 +121,8 @@ const ThreeColumnSection = () => {
                 key={section.id}
                 data-section-id={section.id}
                 className={`group relative transition-all duration-700 ease-out transform ${isVisible
-                    ? 'translate-y-0 opacity-100'
-                    : 'translate-y-8 opacity-0'
+                  ? 'translate-y-0 opacity-100'
+                  : 'translate-y-8 opacity-0'
                   }`}
                 style={{
                   transitionDelay: `${index * 150}ms`
@@ -205,25 +193,25 @@ const ThreeColumnSection = () => {
         <div className="mt-16 text-center">
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Ready to transform your business?
+              Ready to unlock the power of your data?
             </h3>
             <p className="text-gray-600 mb-6 text-lg">
-              Discover how our comprehensive solutions can accelerate your digital transformation journey.
+              Discover how our tailored analytics solutions and interactive tools can elevate your research, streamline decision-making, and drive real impact.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
+              <button
+                onClick={() => {
+                  const section = document.getElementById('case-studies');
+                  if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:shadow-lg hover:scale-105"
+                type="button"
               >
                 Get Started Today
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-              <Link
-                href="/demo"
-                className="inline-flex items-center justify-center px-8 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-gray-400 hover:bg-gray-50 transition-all duration-300"
-              >
-                Request a Demo
-              </Link>
+              </button>
             </div>
           </div>
         </div>

@@ -9,66 +9,62 @@ const Website = () => {
   // Carousel data
   const carouselSlides = [
     {
-      title: "Creating long-term value with responsible AI",
-      description: "Fair, transparent, and accountable AI gives organizations a competitive edge. Responsible AI safeguards your reputation and unlocks AI's full potential.",
-      cta: "Learn more and download our report",
-      imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop"
+      title: "Transforming Genomics with Intelligent Software",
+      description: "Empowering bioinformatics enterprises with custom data solutions and innovative software tools.",
+      cta: "Discover Case Studies",
+      imageUrl: "/c1.svg"
     },
     {
-      title: "Digital transformation that delivers results",
-      description: "Transform your business with cutting-edge technology solutions that drive innovation and operational excellence across all sectors.",
-      cta: "Explore our services",
-      imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop"
+      title: "Harness the Power of Big Data",
+      description: "From exploration to prediction, we craft data-driven strategies that fuel decisions and accelerate growth.",
+      cta: "Discover Case Studies",
+      imageUrl: "/c2.svg"
     },
     {
-      title: "Secure cloud solutions for the future",
-      description: "Modernize your infrastructure with secure, scalable cloud solutions that enable your organization to thrive in the digital economy.",
-      cta: "Discover cloud services",
-      imageUrl: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&h=600&fit=crop"
+      title: "Making Data Make Sense",
+      description: "Interactive dashboards and visual storytelling that bring clarity to complex datasets.",
+      cta: "Discover Case Studies",
+      imageUrl: "/c3.svg"
     }
   ];
 
   // Partners data with logos
   const partners = [
-    { name: "Microsoft", logo: "/micro.png" },
-    { name: "Getty Images", logo: "/micro.png" },
-    { name: "Roche", logo: "/micro.png" },
-    { name: "nanoString", logo: "/micro.png" },
-    { name: "Kite", logo: "/micro.png" },
-    { name: "Kaiser Permanente", logo: "/micro.png" },
-    { name: "Microsoft", logo: "/micro.png" },
-    { name: "Getty Images", logo: "/micro.png" },
-    { name: "Roche", logo: "/micro.png" },
-    { name: "nanoString", logo: "/micro.png" },
-    { name: "Kite", logo: "/micro.png" },
-    { name: "Kaiser Permanente", logo: "/micro.png" }
+    { name: "Illumina", logo: "/i.png" },
+    { name: "Roche", logo: "/i2.png" },
+    { name: "Sonoma Biotherapeutics", logo: "/i3.png" },
+    { name: "MedGenome Labs", logo: "/i4.png" },
+    { name: "Illumina", logo: "/i.png" },
+    { name: "Roche", logo: "/i2.png" },
+    { name: "Sonoma Biotherapeutics", logo: "/i3.png" },
+    { name: "MedGenome Labs", logo: "/i4.png" },
   ];
 
   // Case studies data
   const caseStudies = [
     {
-      company: "HUS Kiinteistöt Oy",
-      title: "AI-driven purchase invoice handling saves up to 76% of time in HUS Kiinteistöt",
-      imageUrl: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=300&fit=crop",
-      slug: "hus-kiinteistot-ai-invoice"
+      company: "Case Study",
+      title: "bulkRNA App",
+      imageUrl: "/case-placeholder.svg",
+      slug: "bulkrna-app"
     },
     {
-      company: "Raisio",
-      title: "AI makes operations more efficient for Finnish food industry pioneer",
-      imageUrl: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop",
-      slug: "raisio-ai-operations"
+      company: "Case Study",
+      title: "scRNA App",
+      imageUrl: "/case-placeholder.svg",
+      slug: "scrna-app"
     },
     {
-      company: "Case study",
-      title: "Multi-layered generative-AI solution accelerates insurance giant's software delivery",
-      imageUrl: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop",
-      slug: "insurance-genai-software"
+      company: "Case Study",
+      title: "Biodiversity App",
+      imageUrl: "/case-placeholder.svg",
+      slug: "biodiversity-app"
     },
     {
-      company: "CGI's Artificial Intelligence Practice",
-      title: "GenAI cuts query response time to just 45 seconds for telecom firm",
-      imageUrl: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=400&h=300&fit=crop",
-      slug: "telecom-genai-query"
+      company: "Case Study",
+      title: "Rnaseq Nextflow pipeline",
+      imageUrl: "/case-placeholder.svg",
+      slug: "rnaseq-nextflow-pipeline"
     }
   ];
 

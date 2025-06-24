@@ -1,37 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Linkedin, Twitter, Youtube, Facebook } from 'lucide-react';
+import { Linkedin, Twitter, Youtube, Facebook } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   const companyLinks = [
     { name: 'About us', href: '/about' },
-    { name: 'Alliances', href: '/alliances' },
-    { name: 'Country sites', href: '/locations' },
-    { name: 'ESG', href: '/esg' },
-    { name: 'Investors', href: '/investors' },
-    { name: 'Locations', href: '/locations' },
-    { name: 'Newsroom', href: '/newsroom' },
   ];
 
   const resourceLinks = [
     { name: 'Articles', href: '/articles' },
     { name: 'Blogs', href: '/blogs' },
     { name: 'Case studies', href: '/case-studies' },
-    { name: 'Events', href: '/events' },
     { name: 'Podcasts', href: '/podcasts' },
-    { name: 'Viewpoints', href: '/viewpoints' },
-    { name: 'See more', href: '/resources' },
-  ];
-
-  const supportLinks = [
-    { name: 'Accessibility', href: '/accessibility' },
-    { name: 'Privacy', href: '/privacy' },
-    { name: 'Terms of use', href: '/terms' },
-    { name: 'Careers FAQ', href: '/careers-faq' },
-    { name: 'Cookie Management Center', href: '/cookies' },
   ];
 
   const socialLinks = [
@@ -46,7 +29,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Company Info */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-4">
             <div className="mb-6">
               <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text py-2 mb-4">Ducologix</div>
               <p className="text-lg font-medium text-gray-700 mb-4">
@@ -58,69 +41,50 @@ const Footer: React.FC = () => {
                 to help accelerate returns on your investments.
               </p>
             </div>
-            <Link 
-              href="/about" 
-              className="inline-flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
-            >
-              Learn more about CGI
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
           </div>
 
-          {/* Company Links */}
-          <div className="lg:col-span-2">
-            <h3 className="font-semibold text-gray-900 mb-6">Company</h3>
-            <ul className="space-y-4">
-              {companyLinks.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href} 
-                    className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Combined Links Section */}
+          <div className="lg:col-span-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Company Links */}
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-6">Company</h3>
+                <ul className="space-y-4">
+                  {companyLinks.map((link) => (
+                    <li key={link.name}>
+                      <Link 
+                        href={link.href} 
+                        className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-          {/* Resource Center */}
-          <div className="lg:col-span-2">
-            <h3 className="font-semibold text-gray-900 mb-6">Resource center</h3>
-            <ul className="space-y-4">
-              {resourceLinks.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href} 
-                    className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div className="lg:col-span-2">
-            <h3 className="font-semibold text-gray-900 mb-6">Support</h3>
-            <ul className="space-y-4">
-              {supportLinks.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href} 
-                    className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+              {/* Resource Center */}
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-6">Resource center</h3>
+                <ul className="space-y-4">
+                  {resourceLinks.map((link) => (
+                    <li key={link.name}>
+                      <Link 
+                        href={link.href} 
+                        className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
 
           {/* Newsletter and Social */}
-          <div className="lg:col-span-3">
-            <h3 className="font-semibold text-gray-900 mb-6">Discover more about CGI</h3>
+          <div className="lg:col-span-4">
+            <h3 className="font-semibold text-gray-900 mb-6">Discover more about Ducologix</h3>
             
             <div className="mb-8">
               <p className="text-gray-700 mb-4">Keeping you informed</p>
@@ -153,7 +117,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-200 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-600 text-sm">
-              © {currentYear} CGI Inc.
+              © {currentYear} Ducologix Inc.
             </p>
             
             <div className="flex flex-wrap gap-6 mt-4 md:mt-0">

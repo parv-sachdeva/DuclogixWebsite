@@ -60,7 +60,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+    <section id='contact' className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
       <div className="container mx-auto px-6 py-16">
         <div className="text-center mb-8">
           <h2 className="text-4xl md:text-5xl font-light mb-8">

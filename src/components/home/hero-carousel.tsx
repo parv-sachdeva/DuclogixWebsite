@@ -53,13 +53,19 @@ const HeroCarousel = ({ carouselSlides }: HeroCarouselProps) => {
                     <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                       {slide.description}
                     </p>
-                    <Link
-                      href="#"
-                      className="inline-flex items-center text-red-600 font-semibold hover:text-red-700 transition-colors group"
+                    <button
+                      onClick={() => {
+                        const section = document.getElementById('case-studies');
+                        if (section) {
+                          section.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }}
+                      className="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold px-4 py-2 rounded-full shadow  group focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-transform hover:scale-105"
+                      type="button"
                     >
                       {slide.cta}
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                    </button>
                   </div>
                 </div>
 

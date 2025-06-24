@@ -23,9 +23,9 @@ const PartnersSection = ({ partners }: PartnersSectionProps) => {
                 <Image
                   src={partner.logo}
                   alt={`${partner.name} logo`}
-                  width={120}
-                  height={60}
-                  className="h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  width={240}
+                  height={240}
+                  className="h-30 w-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
                 />
               </div>
             ))}

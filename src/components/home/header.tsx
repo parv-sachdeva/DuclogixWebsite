@@ -68,7 +68,7 @@ const Header = () => {
                         {/* <button className="p-2 text-gray-700 hover:text-red-600 transition-colors">
                             <Search className="h-5 w-5" />
                         </button> */}
-                        <Link href="/contact" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+                        <Link href="#contact" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
                             Contact
                         </Link>
                         {/* <button className="flex items-center space-x-1 text-gray-700 hover:text-red-600 font-medium transition-colors">

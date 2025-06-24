@@ -17,7 +17,7 @@ interface CaseStudiesSectionProps {
 
 const CaseStudiesSection = ({ caseStudies }: CaseStudiesSectionProps) => {
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-purple-800 to-purple-900 text-white">
+    <section id="case-studies" className="py-16 lg:py-24 bg-gradient-to-br from-purple-800 to-purple-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-bold mb-12">Case studies</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
