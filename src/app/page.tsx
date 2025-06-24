@@ -4,6 +4,7 @@ import HeroCarousel from '@/components/home/hero-carousel';
 import ThreeColumnSection from '@/components/home/three-column-section';
 import PartnersSection from '@/components/home/partners-section';
 import CaseStudiesSection from '@/components/home/case-studies-section';
+import { getAllCaseStudies } from '@/lib/case-studies-data';
 
 const Website = () => {
   // Carousel data
@@ -40,33 +41,13 @@ const Website = () => {
     { name: "MedGenome Labs", logo: "/i4.png" },
   ];
 
-  // Case studies data
-  const caseStudies = [
-    {
-      company: "Case Study",
-      title: "bulkRNA App",
-      imageUrl: "/case-placeholder.svg",
-      slug: "bulkrna-app"
-    },
-    {
-      company: "Case Study",
-      title: "scRNA App",
-      imageUrl: "/case-placeholder.svg",
-      slug: "scrna-app"
-    },
-    {
-      company: "Case Study",
-      title: "Biodiversity App",
-      imageUrl: "/case-placeholder.svg",
-      slug: "biodiversity-app"
-    },
-    {
-      company: "Case Study",
-      title: "Rnaseq Nextflow pipeline",
-      imageUrl: "/case-placeholder.svg",
-      slug: "rnaseq-nextflow-pipeline"
-    }
-  ];
+  // Case studies data from global data file
+  const caseStudies = getAllCaseStudies().map(study => ({
+    company: study.company,
+    title: study.title,
+    imageUrl: study.imageUrl,
+    slug: study.slug
+  }));
 
   return (
     <div className="min-h-screen bg-white">
