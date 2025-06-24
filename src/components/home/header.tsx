@@ -20,28 +20,28 @@ const Header = () => {
 
                     <Menu setActive={setActive}>
                         <nav className="hidden md:flex space-x-8">                            <MenuItem setActive={setActive} active={active} item={t('services')}>
-                                <div className="flex flex-col space-y-4 text-sm">
+                            <div className="flex flex-col space-y-4 text-sm">
                                 <ProductItem
-                                        title={t('lifeSciences')}
-                                        href="/life-sciences"
-                                        src="https://assets.aceternity.com/demos/algochurn.webp"
-                                        description="Accelerate digitization in life sciences with our industry expertise"
-                                    />
-                                    <ProductItem
-                                        title="Tailwind Master Kit"
-                                        href="https://tailwindmasterkit.com"
-                                        src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-                                        description="Production ready Tailwind css components for your next project"
-                                    />
-                                </div>
-                            </MenuItem>
-                            <MenuItem setActive={setActive} active={active} item="Products">
+                                    title={t('lifeSciences')}
+                                    href="/life-sciences"
+                                    src="https://assets.aceternity.com/demos/algochurn.webp"
+                                    description="Accelerate digitization in life sciences with our industry expertise"
+                                />
+                                <ProductItem
+                                    title="Tailwind Master Kit"
+                                    href="https://tailwindmasterkit.com"
+                                    src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+                                    description="Production ready Tailwind css components for your next project"
+                                />
+                            </div>
+                        </MenuItem>
+                            <MenuItem setActive={setActive} active={active} item={t("products")}>
                                 <div className="  text-sm grid grid-cols-2 gap-10 p-4">                                    <ProductItem
-                                        title={t('businessConsulting')}
-                                        href="/business-consulting"
-                                        src="https://assets.aceternity.com/demos/algochurn.webp"
-                                        description="A comprehensive business consulting service to help you grow your business"
-                                    />
+                                    title={t('businessConsulting')}
+                                    href="/business-consulting"
+                                    src="https://assets.aceternity.com/demos/algochurn.webp"
+                                    description="A comprehensive business consulting service to help you grow your business"
+                                />
                                     <ProductItem
                                         title="Tailwind Master Kit"
                                         href="https://tailwindmasterkit.com"
