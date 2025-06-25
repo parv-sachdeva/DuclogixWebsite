@@ -1,43 +1,45 @@
+'use client';
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 const KeyCapabilitiesSection: React.FC = () => {
+    const t = useTranslations('lifeSciences.capabilities');
+
     const capabilities = [
         {
-            title: 'Commercial launch',
-            description: 'and operations to simplify planning and execution and improve launch efficiency'
+            title: t('items.commercialLaunch.title'),
+            description: t('items.commercialLaunch.description')
         },
         {
-            title: 'Clinical services',
-            description: 'to reduce the duration of drug development timelines'
+            title: t('items.clinicalServices.title'),
+            description: t('items.clinicalServices.description')
         },
         {
-            title: 'Manufacturing innovation',
-            description: 'to achieve end-to-end supply chain optimization, manufacturing execution excellence, transport management and ERP, including Industry 4.0'
+            title: t('items.manufacturingInnovation.title'),
+            description: t('items.manufacturingInnovation.description')
         },
         {
-            title: 'Regulatory compliance',
-            description: 'to help clients continuously monitor clinical drug safety data across the entire product life cycle'
+            title: t('items.regulatoryCompliance.title'),
+            description: t('items.regulatoryCompliance.description')
         },
         {
-            title: 'Outsourcing',
-            description: 'to improve the management and operation of company-wide infrastructures, application suites and business processes'
+            title: t('items.outsourcing.title'),
+            description: t('items.outsourcing.description')
         },
         {
-            title: 'Intelligent automation',
-            description: 'to increase efficiency of operations by combining advanced analytics with IoT and AI for predictive maintenance'
+            title: t('items.intelligentAutomation.title'),
+            description: t('items.intelligentAutomation.description')
         }
     ];
 
     return (
         <section className="py-20 bg-white">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    {/* Left Content */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">                    {/* Left Content */}
                     <div>
-                        <h2 className="text-4xl font-light text-gray-900 mb-8">Key capabilities</h2>
+                        <h2 className="text-4xl font-light text-gray-900 mb-8">{t('title')}</h2>
                         <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                            CGI expertise and services help life sciences organizations increase speed, efficiency and
-                            innovation, while keeping pace with compliance demands.
+                            {t('description')}
                         </p>
 
                         <div className="relative bg-gray-200 rounded-lg overflow-hidden aspect-video">

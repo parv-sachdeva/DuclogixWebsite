@@ -1,8 +1,12 @@
+'use client';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 const RelatedSectorsSection: React.FC = () => {
+    const t = useTranslations('lifeSciences.relatedSectors');
+    const tCommon = useTranslations('common');
     const sectors = [
         {
             title: 'Health',
@@ -16,10 +20,9 @@ const RelatedSectorsSection: React.FC = () => {
         }
     ];
 
-    return (
-        <section className="py-20 bg-gray-50">
+    return (        <section className="py-20 bg-gray-50">
             <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-light text-gray-900 mb-16">Related sectors</h2>
+                <h2 className="text-4xl font-light text-gray-900 mb-16">{t('title')}</h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {sectors.map((sector, index) => (
@@ -27,9 +30,8 @@ const RelatedSectorsSection: React.FC = () => {
                             <CardContent className="p-8">
                                 <div className="h-2 bg-gray-300 mb-6"></div>
                                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">{sector.title}</h3>
-                                <p className="text-gray-600 leading-relaxed mb-6">{sector.description}</p>
-                                <Button variant="link" className="p-0 text-gray-900 hover:text-blue-600">
-                                    Learn more
+                                <p className="text-gray-600 leading-relaxed mb-6">{sector.description}</p>                                <Button variant="link" className="p-0 text-gray-900 hover:text-blue-600">
+                                    {tCommon('learnMore')}
                                     <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>
                             </CardContent>

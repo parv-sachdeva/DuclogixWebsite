@@ -1,0 +1,287 @@
+{
+  "common": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "products": "Productos",
+    "contact": "Contacto",
+    "businessConsulting": "Consultoría Empresarial",
+    "lifeSciences": "Ciencias de la Vida",
+    "caseStudies": "Casos de Estudio",
+    "learnMore": "Saber más",
+    "getInTouch": "Ponte en contacto",
+    "readMore": "Leer más",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "submit": "Enviar",
+    "name": "Nombre",
+    "message": "Mensaje",
+    "company": "Empresa",
+    "readCaseStudy": "Leer caso de estudio",
+    "startYourProject": "Iniciar tu proyecto",
+    "exploreMore": "Explorar más",
+    "discoverCaseStudies": "Descubrir casos de estudio",
+    "previousSlide": "Diapositiva anterior",
+    "nextSlide": "Siguiente diapositiva",
+    "goToSlide": "Ir a la diapositiva",
+    "newsAndClientStories": "Noticias e historias de clientes",
+    "exploreInYourGeography": "Explorar en tu geografía"
+  },
+  "navigation": {
+    "menu": "Menú",
+    "close": "Cerrar"
+  },
+  "home": {
+    "heroSlides": {
+      "slide1": {
+        "title": "Transformando la Genómica con Software Inteligente",
+        "description": "Empoderando empresas de bioinformática con soluciones de datos personalizadas y herramientas de software innovadoras.",
+        "cta": "Descubrir casos de estudio"
+      },
+      "slide2": {
+        "title": "Aprovecha el Poder del Big Data",
+        "description": "Desde la exploración hasta la predicción, creamos estrategias basadas en datos que impulsan decisiones y aceleran el crecimiento.",
+        "cta": "Descubrir casos de estudio"
+      },
+      "slide3": {
+        "title": "Haciendo que los Datos Tengan Sentido",
+        "description": "Tableros interactivos y narrativa visual que aportan claridad a conjuntos de datos complejos.",
+        "cta": "Descubrir casos de estudio"
+      }
+    },
+    "threeColumns": {
+      "insights": {
+        "title": "Insights",
+        "description": "Convertimos datos complejos en historias claras usando evidencia del mundo real, no palabras de moda. Explora cómo nuestro trabajo ayuda a los clientes a extraer valor de los datos en todos los sectores en nuestros casos de estudio.",
+        "cta": "Explorar nuestros casos de estudio",
+        "items": {
+          "bioinformatics": "Bioinformática",
+          "dataStorytelling": "Narrativa de datos y tableros",
+          "clinicalAnalytics": "Análisis clínicos y ómicos",
+          "academicCollaborations": "Colaboraciones académicas"
+        }
+      },
+      "services": {
+        "title": "Servicios",
+        "description": "Ayudamos a los clientes a navegar el mundo rico en datos de hoy ofreciendo soluciones de datos seguras, escalables e intuitivas desde el prototipo hasta la implementación.",
+        "cta": "Explorar nuestros casos de estudio",
+        "items": {
+          "bioinformaticsConsulting": "Consultoría en bioinformática",
+          "dataVisualization": "Visualización de datos interactiva",
+          "pipelineAutomation": "Automatización de pipelines",
+          "cloudSolutions": "Soluciones en la nube",
+          "dataScience": "Ciencia de datos y aprendizaje automático",
+          "dataWrangling": "Procesamiento de datos"
+        }
+      },      "solutions": {
+        "title": "Soluciones",
+        "description": "Nuestro portafolio de herramientas personalizadas y componentes reutilizables acelera tu capacidad de convertir ideas en insights—sin empezar desde cero.",
+        "cta": "Explorar nuestros casos de estudio",
+        "items": {
+          "rShinyApps": "Desarrollo de aplicaciones R Shiny",
+          "nextflowPipelines": "Pipelines Nextflow",
+          "highPerformanceComputing": "Computación de alto rendimiento",
+          "customDashboards": "Tableros interactivos personalizados",
+          "ngsAnalysis": "Análisis NGS"
+        }
+      },
+      "cta": {
+        "title": "¿Listo para desbloquear el poder de tus datos?",
+        "description": "Descubre cómo nuestras soluciones analíticas personalizadas y herramientas interactivas pueden elevar tu investigación, optimizar la toma de decisiones y generar un impacto real."
+      }
+    },
+    "partners": {
+      "title": "Con quién trabajamos"
+    },
+    "caseStudies": {
+      "title": "Estudios de caso",
+      "discoverMore": "Descubre más éxitos de nuestros clientes"
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "subtitle": "¿Listo para empezar?",
+      "description": "¿Tienes un proyecto en mente? Nos encantaría saber de ti. Discutamos cómo podemos ayudarte a transformar tus ideas en realidad.",
+      "form": {
+        "name": "Nombre completo",
+        "email": "Dirección de correo electrónico",
+        "company": "Empresa (Opcional)",
+        "subject": "Asunto",
+        "message": "Mensaje",
+        "nameRequired": "El nombre es requerido",
+        "emailRequired": "El correo electrónico es requerido",
+        "emailInvalid": "Por favor ingresa una dirección de correo electrónico válida",
+        "subjectRequired": "El asunto es requerido",
+        "messageRequired": "El mensaje es requerido",
+        "submitting": "Enviando...",
+        "submit": "Enviar mensaje",
+        "success": "¡Gracias! Tu mensaje ha sido enviado exitosamente.",
+        "error": "Algo salió mal. Por favor intenta de nuevo.",
+        "thankYou": "¡Gracias!"
+      }
+    },
+    "contactExpert": {
+      "title": "Contactar a nuestro experto",
+      "viewProfile": "Ver perfil"
+    },
+    "relatedSectors": {
+      "title": "Sectores relacionados"
+    }
+  },  "caseStudies": {
+    "title": "Casos de Estudio",
+    "subtitle": "Descubre cómo hemos ayudado a organizaciones a transformar sus operaciones con soluciones tecnológicas innovadoras e insights basados en datos.",
+    "readTime": "min de lectura",
+    "moreItems": "más",
+    "cta": {
+      "title": "¿Listo para crear tu historia de éxito?",
+      "description": "Únete a nuestra creciente lista de clientes satisfechos que han transformado sus operaciones con nuestras soluciones innovadoras.",
+      "button": "Iniciar tu proyecto"
+    },
+    "bulkrnaApp": {
+      "title": "Aplicación de Análisis Bulk RNA-seq",
+      "company": "Instituto de Investigación BioGenomics",
+      "summary": "Desarrollo de una plataforma web integral para análisis de datos Bulk RNA-seq con algoritmos estadísticos avanzados y visualizaciones interactivas para investigadores en genómica.",
+      "readTime": "8",
+      "tags": "Bioinformática, RNA-seq, Aplicación web",
+      "challenge": "El Instituto de Investigación BioGenomics necesitaba una plataforma fácil de usar para analizar grandes conjuntos de datos RNA-seq. Sus flujos de trabajo existentes eran fragmentados y requerían un procesamiento manual extenso, resultando en ineficiencias en su pipeline de investigación.",
+      "solution": "Desarrollamos una aplicación web completamente integrada con frontend React y Next.js, alimentada por un backend robusto de Python FastAPI. La plataforma integra herramientas bioinformáticas probadas como DESeq2 y edgeR para análisis de expresión diferencial, y proporciona visualizaciones interactivas D3.js para exploración de datos.",
+      "results": "La plataforma redujo el tiempo de análisis en un 75% y permitió a los investigadores realizar análisis complejos de RNA-seq sin habilidades extensas de programación. El instituto reportó un aumento del 300% en productividad de investigación y pudo emprender más proyectos colaborativos.",
+      "testimonial": "La plataforma de análisis RNA-seq desarrollada por Ducologix ha revolucionado nuestras capacidades de investigación. Lo que solía tomar semanas ahora se puede lograr en horas."
+    },
+    "scrnaApp": {
+      "title": "Suite de Análisis Single-Cell RNA-seq",
+      "company": "Laboratorio de Dinámica Celular",
+      "summary": "Construcción de un pipeline de análisis single-cell RNA-seq avanzado con aprendizaje automático para identificación de tipos celulares y análisis de trayectorias para investigación del cáncer.",
+      "readTime": "10",
+      "tags": "Genómica unicelular, Aprendizaje automático, Vue.js",
+      "challenge": "El Laboratorio de Dinámica Celular procesaba manualmente grandes conjuntos de datos single-cell RNA-seq usando varias herramientas desconectadas, resultando en resultados inconsistentes y ciclos de análisis prolongados. Necesitaban una plataforma unificada para su iniciativa de investigación del cáncer.",
+      "solution": "Nuestra solución utilizó Vue.js para una interfaz de usuario responsiva, integrada con motores de análisis basados en Python usando Scanpy y Seurat. Implementamos algoritmos de aprendizaje automático con scikit-learn y TensorFlow para clasificación celular avanzada y análisis de trayectorias, todo desplegado en contenedores Docker.",
+      "results": "El laboratorio logró una mejora del 400% en velocidad de procesamiento e identificó nuevas subpoblaciones celulares previamente pasadas por alto. El pipeline estandarizado llevó a resultados reproducibles a través de diferentes proyectos de investigación.",
+      "testimonial": "La suite scRNA-seq ha transformado nuestra comprensión de la heterogeneidad celular en tumores. Los pipelines de aprendizaje automático automatizados han revelado insights que habrían sido imposibles con métodos manuales."
+    },
+    "biodiversityApp": {
+      "title": "Sistema de Monitoreo de Biodiversidad",
+      "company": "Conservation Alliance International",
+      "summary": "Desarrollo de una aplicación móvil y web para monitoreo de biodiversidad en tiempo real con integración GIS y reconocimiento de especies impulsado por IA para proyectos de conservación.",
+      "readTime": "12",
+      "tags": "Conservación, Aplicación móvil, IA, GIS",
+      "challenge": "Conservation Alliance International recolectaba datos de biodiversidad usando métodos obsoletos, resultando en informes retrasados y oportunidades perdidas para acciones de conservación oportunas. Necesitaban una solución moderna, mobile-first para investigadores de campo.",
+      "solution": "Desarrollamos una solución integral con React Native para recolección de datos móvil, Angular para dashboards web, y Node.js/Express para servicios backend. El sistema incluye integración GIS para análisis espacial, reconocimiento de imágenes impulsado por TensorFlow para identificación de especies, y procesamiento de datos en tiempo real alojado en AWS.",
+      "results": "El sistema permitió un aumento del 500% en eficiencia de recolección de datos y redujo el tiempo de informes de meses a días. El reconocimiento de especies impulsado por IA logró 95% de precisión, permitiendo incluso a voluntarios no expertos contribuir datos valiosos.",
+      "testimonial": "El sistema de monitoreo de biodiversidad ha revolucionado nuestros esfuerzos de conservación. Ahora podemos responder a amenazas en tiempo real y tomar decisiones informadas con datos actuales."
+    },
+    "rnaseqPipeline": {
+      "title": "Pipeline Nextflow RNA-seq Automatizado",
+      "company": "Consorcio de Medicina de Precisión",
+      "summary": "Implementación de un pipeline de procesamiento RNA-seq completamente automatizado y escalable con Nextflow para análisis genómico de alto rendimiento en entornos cloud.",
+      "readTime": "6",
+      "tags": "Nextflow, Cloud Computing, Automatización de pipeline",
+      "challenge": "El Consorcio de Medicina de Precisión procesaba muestras RNA-seq manualmente con protocolos inconsistentes y largos tiempos de espera. Necesitaban un pipeline completamente automatizado y reproducible que pudiera escalar a cargas de trabajo fluctuantes.",
+      "solution": "Diseñamos un pipeline Nextflow robusto integrando control de calidad, alineación (STAR), cuantificación (RSEM), y análisis de expresión diferencial (DESeq2). El pipeline fue optimizado para AWS Batch con contenedores Docker/Singularity para máxima reproducibilidad y escalabilidad.",
+      "results": "El consorcio logró una reducción de 10x en tiempo de procesamiento y eliminó completamente errores manuales. El pipeline automatizado ahora procesa más de 1,000 muestras por mes con resultados consistentes y reproducibles.",      "testimonial": "El pipeline Nextflow ha transformado nuestras operaciones genómicas. Lo que solía requerir semanas de trabajo manual ahora funciona automáticamente con perfecta reproducibilidad."
+    },
+    "challenge": "El Desafío",
+    "solution": "Nuestra Solución",
+    "technologiesUsed": "Tecnologías Utilizadas",
+    "resultsAndImpact": "Resultados e Impacto",
+    "clientTestimonial": "Testimonio del Cliente",
+    "researchTeam": "Equipo de Investigación",
+    "projectGallery": "Galería del Proyecto",
+    "ctaTitle": "¿Listo para Transformar tu Proyecto?",
+    "ctaDescription": "Hablemos sobre cómo podemos ayudarte a lograr resultados similares con soluciones innovadoras adaptadas a tus necesidades.",
+    "getStartedToday": "Comenzar Hoy"
+  },
+  "businessConsulting": {
+    "hero": {
+      "title": "Consultoría empresarial",
+      "subtitle": "Piensa audazmente y actúa pragmáticamente",
+      "description": "Al conectar la estrategia con la ejecución y tender puentes entre imperativos competidores, ayudamos a los clientes a pensar audazmente y actuar pragmáticamente a través de consultoría empresarial e IT estratégica.",
+      "forbesAward": "Forbes nombra a CGI como una de las 'Mejores Empresas de Consultoría en Gestión del Mundo' para 2024",
+      "idcMarketscape": "IDC MarketScape posiciona a CGI como un 'Jugador Principal' en su Evaluación de Proveedores IDC MarketScape - Servicios de Consultoría Empresarial Mundial 2024"
+    },
+    "capabilities": {
+      "title": "Nuestras Capacidades",
+      "businessStrategy": {
+        "title": "Estrategia empresarial",
+        "content": "Planificación estratégica e implementación para impulsar el crecimiento organizacional y la ventaja competitiva."
+      },
+      "humanTransformation": {
+        "title": "Transformación centrada en el ser humano",
+        "content": "Gestión del cambio enfocada en las personas que pone la experiencia humana en el centro de las iniciativas de transformación."
+      },
+      "operationalExcellence": {
+        "title": "Valor del cliente/ciudadano y excelencia operacional",
+        "content": "Optimización de operaciones y procesos para entregar valor excepcional a clientes y ciudadanos."
+      },
+      "digitalLeadership": {
+        "title": "Liderazgo digital y agenda del CIO",
+        "content": "Estrategia tecnológica y liderazgo de transformación digital para organizaciones modernas."
+      }
+    },
+    "contactExpert": {
+      "title": "Contactar a nuestro experto",
+      "viewProfile": "Ver perfil"
+    }
+  },
+  "lifeSciences": {
+    "hero": {
+      "title": "Ciencias de la vida",
+      "subtitle": "Aprovechando nuestra amplia experiencia industrial para acelerar la digitalización",
+      "description": "Mientras las organizaciones de ciencias de la vida trabajan para minimizar los impactos regulatorios y competitivos mientras maximizan el potencial de ingresos, CGI ayuda a los clientes a reducir costos e impulsar la innovación a través de la automatización y optimización de procesos."
+    },
+    "capabilities": {
+      "title": "Capacidades clave",
+      "description": "La experiencia y servicios de CGI ayudan a las organizaciones de ciencias de la vida a aumentar la velocidad, eficiencia e innovación, mientras mantienen el ritmo con las demandas de cumplimiento.",
+      "items": {
+        "commercialLaunch": {
+          "title": "Lanzamiento comercial",
+          "description": "y operaciones para simplificar la planificación y ejecución y mejorar la eficiencia del lanzamiento"
+        },
+        "clinicalServices": {
+          "title": "Servicios clínicos",
+          "description": "para reducir la duración de los plazos de desarrollo de medicamentos"
+        },
+        "manufacturingInnovation": {
+          "title": "Innovación en manufactura",
+          "description": "para lograr optimización de cadena de suministro de extremo a extremo, excelencia en ejecución de manufactura, gestión de transporte y ERP, incluyendo Industria 4.0"
+        },
+        "regulatoryCompliance": {
+          "title": "Cumplimiento regulatorio",
+          "description": "para ayudar a los clientes a monitorear continuamente los datos de seguridad de medicamentos clínicos a lo largo de todo el ciclo de vida del producto"
+        },
+        "outsourcing": {
+          "title": "Externalización",
+          "description": "para mejorar la gestión y operación de infraestructuras, suites de aplicaciones y procesos de negocio a nivel empresarial"
+        },
+        "intelligentAutomation": {
+          "title": "Automatización inteligente",
+          "description": "para aumentar la eficiencia de las operaciones combinando análisis avanzado con IoT e IA para mantenimiento predictivo"
+        }
+      }
+    }
+  },  "footer": {
+    "description": "Liderando el camino en consultoría empresarial e innovación en ciencias de la vida.",
+    "company": "Empresa",
+    "resourceCenter": "Centro de recursos",
+    "discoverMore": "Descubre más sobre Ducologix",
+    "keepingInformed": "Manteniéndote informado",
+    "subscribe": "Suscribirse",
+    "quickLinks": "Enlaces rápidos",
+    "services": "Servicios",
+    "contact": "Información de contacto",
+    "followUs": "Síguenos",
+    "allRightsReserved": "Todos los derechos reservados."
+  },
+  "seo": {
+    "title": "Ducologix - Transformando la Genómica con Software Inteligente",
+    "description": "Potenciando empresas de bioinformática con soluciones de datos personalizadas, herramientas de software innovadoras y plataformas de análisis genómico de vanguardia. Consultoría experta para empresas de ciencias de la vida y biotecnología.",
+    "homeTitle": "Ducologix - Soluciones de Genómica y Bioinformática | Plataforma de Análisis de Datos",
+    "homeDescription": "Transforme su investigación genómica con las soluciones de software inteligentes de Ducologix. Análisis RNA-seq personalizado, genómica de células individuales y consultoría en bioinformática para empresas de ciencias de la vida.",
+    "caseStudiesTitle": "Casos de Estudio - Soluciones Genómicas Ducologix",
+    "caseStudiesDescription": "Explore historias de éxito del mundo real de proyectos de genómica y bioinformática. Vea cómo Ducologix transforma la investigación con soluciones innovadoras de análisis de datos.",
+    "businessConsultingTitle": "Consultoría Empresarial - Soluciones Genómicas Estratégicas | Ducologix",
+    "businessConsultingDescription": "Consultoría experta para empresas de genómica y ciencias de la vida. Planificación estratégica, implementación tecnológica y servicios de aceleración del crecimiento.",
+    "lifeSciencesTitle": "Soluciones de Ciencias de la Vida - Tecnología Genómica Avanzada | Ducologix",
+    "lifeSciencesDescription": "Soluciones tecnológicas de ciencias de la vida de vanguardia. Análisis RNA-seq, genómica de células individuales, proteómica y desarrollo de software bioinformático personalizado."
+  }
+}

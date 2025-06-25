@@ -2,9 +2,12 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Menu, MenuItem, ProductItem } from '@/components/ui/navbar-menu';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 const Header = () => {
     const [active, setActive] = useState<string | null>(null);
+    const t = useTranslations('common');
     return (
         <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50" onMouseLeave={() => setActive(null)}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,31 +19,29 @@ const Header = () => {
                     </div>
 
                     <Menu setActive={setActive}>
-                        <nav className="hidden md:flex space-x-8">
-                            <MenuItem setActive={setActive} active={active} item="Services">
-                                <div className="flex flex-col space-y-4 text-sm">
+                        <nav className="hidden md:flex space-x-8">                            <MenuItem setActive={setActive} active={active} item={t('services')}>
+                            <div className="flex flex-col space-y-4 text-sm">
                                 <ProductItem
-                                        title="Life Sciences"
-                                        href="/life-sciences"
-                                        src="https://assets.aceternity.com/demos/algochurn.webp"
-                                        description="Accelerate digitization in life sciences with our industry expertise"
-                                    />
-                                    <ProductItem
-                                        title="Tailwind Master Kit"
-                                        href="https://tailwindmasterkit.com"
-                                        src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-                                        description="Production ready Tailwind css components for your next project"
-                                    />
-                                </div>
-                            </MenuItem>
-                            <MenuItem setActive={setActive} active={active} item="Products">
-                                <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-                                    <ProductItem
-                                        title="Business Consulting"
-                                        href="/business-consulting"
-                                        src="https://assets.aceternity.com/demos/algochurn.webp"
-                                        description="A comprehensive business consulting service to help you grow your business"
-                                    />
+                                    title={t('lifeSciences')}
+                                    href="/life-sciences"
+                                    src="https://assets.aceternity.com/demos/algochurn.webp"
+                                    description="Accelerate digitization in life sciences with our industry expertise"
+                                />
+                                <ProductItem
+                                    title="Tailwind Master Kit"
+                                    href="https://tailwindmasterkit.com"
+                                    src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+                                    description="Production ready Tailwind css components for your next project"
+                                />
+                            </div>
+                        </MenuItem>
+                            <MenuItem setActive={setActive} active={active} item={t("products")}>
+                                <div className="  text-sm grid grid-cols-2 gap-10 p-4">                                    <ProductItem
+                                    title={t('businessConsulting')}
+                                    href="/business-consulting"
+                                    src="https://assets.aceternity.com/demos/algochurn.webp"
+                                    description="A comprehensive business consulting service to help you grow your business"
+                                />
                                     <ProductItem
                                         title="Tailwind Master Kit"
                                         href="https://tailwindmasterkit.com"
@@ -67,17 +68,10 @@ const Header = () => {
                     <div className="flex items-center space-x-4">
                         {/* <button className="p-2 text-gray-700 hover:text-red-600 transition-colors">
                             <Search className="h-5 w-5" />
-                        </button> */}
-                        <Link href="#contact" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
-                            Contact
+                        </button> */}                        <Link href="#contact" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+                            {t('contact')}
                         </Link>
-                        {/* <button className="flex items-center space-x-1 text-gray-700 hover:text-red-600 font-medium transition-colors">
-                            <Globe className="h-4 w-4" />
-                            <span>Global</span>
-                        </button> */}
-                        <button className="text-gray-700 hover:text-red-600 font-medium transition-colors">
-                            EN
-                        </button>
+                        <LanguageSwitcher />
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 interface Partner {
   name: string;
@@ -12,10 +13,12 @@ interface PartnersSectionProps {
 }
 
 const PartnersSection = ({ partners }: PartnersSectionProps) => {
+  const t = useTranslations('home.partners');
+
   return (
     <section className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-xl text-gray-600 mb-8">Who we work with</h2>
+        <h2 className="text-center text-xl text-gray-600 mb-8">{t('title')}</h2>
         <div className="overflow-hidden">
           <div className="flex animate-scroll space-x-12 items-center">
             {partners.map((partner, index) => (

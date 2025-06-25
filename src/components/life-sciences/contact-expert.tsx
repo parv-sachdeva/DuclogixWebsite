@@ -1,14 +1,18 @@
+'use client';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 // Contact Expert Section
 const ContactExpertSection: React.FC = () => {
+    const t = useTranslations('lifeSciences.contactExpert');
+
     return (
         <section className="py-20 bg-gray-50">
             <div className="container mx-auto px-6">
-                <h2 className="text-4xl font-light text-gray-900 mb-16">Contact our expert</h2>
+                <h2 className="text-4xl font-light text-gray-900 mb-16">{t('title')}</h2>
 
                 <Card className="border-0 shadow-lg max-w-4xl">
                     <CardContent className="p-8">
@@ -30,9 +34,8 @@ const ContactExpertSection: React.FC = () => {
                                     Ben Goldberg is the Global Industry Lead for Health and Life Sciences at CGI, where he
                                     engages with teams around the world to help define, develop, and foster our role as
                                     technology partner for health and care organizations.
-                                </p>
-                                <Button variant="link" className="p-0 text-gray-900 hover:text-blue-600">
-                                    View profile
+                                </p>                                <Button variant="link" className="p-0 text-gray-900 hover:text-blue-600">
+                                    {t('viewProfile')}
                                     <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>
                             </div>

@@ -1,0 +1,283 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "products": "Products",
+    "contact": "Contact",
+    "businessConsulting": "Business Consulting",
+    "lifeSciences": "Life Sciences",
+    "caseStudies": "Case Studies",
+    "learnMore": "Learn More",
+    "getInTouch": "Get in Touch",
+    "readMore": "Read More",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "submit": "Submit",
+    "name": "Name",
+    "message": "Message",
+    "company": "Company",
+    "readCaseStudy": "Read case study",
+    "startYourProject": "Start Your Project",
+    "exploreMore": "Explore More",
+    "discoverCaseStudies": "Discover Case Studies",
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "goToSlide": "Go to slide",
+    "newsAndClientStories": "News and client stories",
+    "exploreInYourGeography": "Explore in your geography"
+  },
+  "navigation": {
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "home": {
+    "heroSlides": {
+      "slide1": {
+        "title": "Transforming Genomics with Intelligent Software",
+        "description": "Empowering bioinformatics enterprises with custom data solutions and innovative software tools.",
+        "cta": "Discover Case Studies"
+      },
+      "slide2": {
+        "title": "Harness the Power of Big Data",
+        "description": "From exploration to prediction, we craft data-driven strategies that fuel decisions and accelerate growth.",
+        "cta": "Discover Case Studies"
+      },
+      "slide3": {
+        "title": "Making Data Make Sense",
+        "description": "Interactive dashboards and visual storytelling that bring clarity to complex datasets.",
+        "cta": "Discover Case Studies"
+      }
+    },
+    "threeColumns": {
+      "insights": {
+        "title": "Insights",
+        "description": "We turn complex data into clear stories using real-world evidence, not buzzwords. Explore how our work helps clients extract value from data across sectors in our case studies.",
+        "cta": "Explore our Case Studies",
+        "items": {
+          "bioinformatics": "Bioinformatics",
+          "dataStorytelling": "Data Storytelling & Dashboards",
+          "clinicalAnalytics": "Clinical and Omics Analytics",
+          "academicCollaborations": "Academic Collaborations"
+        }
+      },
+      "services": {
+        "title": "Services",
+        "description": "We help clients navigate today's data-rich world by offering secure, scalable, and intuitive data solutions from prototype to deployment.",
+        "cta": "Explore our Case Studies",
+        "items": {
+          "bioinformaticsConsulting": "Bioinformatics Consulting",
+          "dataVisualization": "Interactive Data Visualization",
+          "pipelineAutomation": "Pipeline Automation",
+          "cloudSolutions": "Cloud Solutions",
+          "dataScience": "Data Science & Machine Learning",
+          "dataWrangling": "Data Wrangling"
+        }
+      },      "solutions": {
+        "title": "Solutions",
+        "description": "Our portfolio of custom-built tools and reusable components accelerates your ability to turn ideas into insight—without starting from scratch.",
+        "cta": "Explore our Case Studies",
+        "items": {
+          "rShinyApps": "R Shiny App Development",
+          "nextflowPipelines": "Nextflow Pipelines",
+          "highPerformanceComputing": "High Performance Computing",
+          "customDashboards": "Custom Interactive Dashboards",
+          "ngsAnalysis": "NGS Analysis"
+        }
+      },
+      "cta": {
+        "title": "Ready to unlock the power of your data?",
+        "description": "Discover how our tailored analytics solutions and interactive tools can elevate your research, streamline decision-making, and drive real impact."
+      }
+    },
+    "partners": {
+      "title": "Who we work with"
+    },
+    "caseStudies": {
+      "title": "Case studies",
+      "discoverMore": "Discover more of our clients' successes"
+    },
+    "contact": {
+      "title": "Contact us",
+      "subtitle": "Ready to get started?",
+      "description": "Have a project in mind? We'd love to hear from you. Let's discuss how we can help transform your ideas into reality.",
+      "form": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "company": "Company (Optional)",
+        "subject": "Subject",
+        "message": "Message",
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "subjectRequired": "Subject is required",
+        "messageRequired": "Message is required",        "submitting": "Sending...",
+        "submit": "Send Message",
+        "success": "Thank you! Your message has been sent successfully.",
+        "error": "Something went wrong. Please try again.",
+        "thankYou": "Thank you!"
+      }
+    }
+  },  "caseStudies": {
+    "title": "Case Studies",
+    "subtitle": "Discover how we've helped organizations transform their operations with innovative technology solutions and data-driven insights.",
+    "readTime": "min read",
+    "moreItems": "more",
+    "cta": {
+      "title": "Ready to Create Your Success Story?",
+      "description": "Join our growing list of satisfied clients who have transformed their operations with our innovative solutions.",
+      "button": "Start Your Project"
+    },
+    "bulkrnaApp": {
+      "title": "bulkRNA App",
+      "company": "BioTech Research Institute",
+      "summary": "Developed a comprehensive bulk RNA sequencing analysis platform that streamlined genomic research workflows and reduced analysis time by 70%.",
+      "readTime": "8 min read",
+      "tags": ["Bioinformatics", "RNA Sequencing", "Data Visualization", "React"],
+      "challenge": "The BioTech Research Institute was struggling with fragmented tools for bulk RNA sequencing analysis. Researchers had to use multiple software packages, leading to inefficient workflows, inconsistent results, and significant time delays in their genomic studies. The lack of a unified platform was hindering their ability to process large datasets efficiently.",
+      "solution": "We developed a comprehensive web-based bulkRNA analysis platform that integrates all necessary tools into a single, intuitive interface. The solution features automated quality control, differential expression analysis, pathway enrichment, and interactive visualization tools. Built with React and Next.js for the frontend, with a robust Python backend using FastAPI and integrated with popular bioinformatics libraries like DESeq2 and edgeR.",      "results": "The platform reduced analysis time by 75% and enabled researchers to perform complex RNA-seq analyses without extensive programming skills. The institute reported a 300% increase in research productivity and was able to undertake more collaborative projects.",
+      "testimonial": "The RNA-seq analysis platform developed by Ducologix has revolutionized our research capabilities. What used to take weeks can now be accomplished in hours."
+    },
+    "scrnaApp": {
+      "title": "scRNA App",
+      "company": "Genomics Innovation Lab",
+      "summary": "Built a cutting-edge single-cell RNA sequencing analysis platform that enables researchers to explore cellular heterogeneity with unprecedented detail and speed.",
+      "readTime": "10 min read",      "tags": "Single-cell, Machine Learning, Data Science, Vue.js",
+      "challenge": "Single-cell RNA sequencing analysis requires sophisticated computational methods to handle the complexity and scale of the data. The Genomics Innovation Lab needed a platform that could perform clustering, trajectory analysis, and cell type identification while being accessible to researchers without extensive computational backgrounds.",
+      "solution": "We created an advanced scRNA analysis platform featuring automated cell clustering, trajectory inference, differential expression analysis, and cell type annotation. The platform incorporates machine learning algorithms for dimensionality reduction and clustering, with an intuitive drag-and-drop interface for creating analysis pipelines. Built with Vue.js frontend and Python backend utilizing Scanpy, Seurat, and custom ML models.",
+      "results": "The lab achieved a 400% improvement in processing speed and identified new cell subpopulations that were previously overlooked. The standardized pipeline led to reproducible results across different research projects.",
+      "testimonial": "The scRNA-seq suite has transformed our understanding of cellular heterogeneity in tumors. The automated machine learning pipelines have revealed insights that would have been impossible with manual methods."
+    },
+    "biodiversityApp": {
+      "title": "Biodiversity App",
+      "company": "EcoConservation Foundation",
+      "summary": "Developed a comprehensive biodiversity monitoring platform that combines citizen science data collection with advanced analytics to track ecosystem health across multiple regions.",
+      "readTime": "12 min read",      "tags": "Environmental Science, Mobile App, GIS, Conservation",
+      "challenge": "The EcoConservation Foundation needed a scalable solution to monitor biodiversity across vast geographical areas. Traditional methods were time-consuming, expensive, and limited in scope. They required a platform that could engage citizen scientists while maintaining data quality and providing actionable insights for conservation efforts.",
+      "solution": "We built a comprehensive biodiversity monitoring ecosystem consisting of a mobile app for field data collection, a web dashboard for data analysis, and automated reporting tools. The solution integrates GIS mapping, species identification using machine learning, and real-time data validation. The platform supports offline data collection and automatic synchronization when connectivity is restored.",
+      "results": "The system enabled a 500% increase in data collection efficiency and reduced reporting time from months to days. The AI-powered species recognition achieved 95% accuracy, allowing even non-expert volunteers to contribute valuable data.",
+      "testimonial": "The biodiversity monitoring system has revolutionized our conservation efforts. We can now respond to threats in real-time and make informed decisions with current data."
+    },
+    "rnaseqPipeline": {
+      "title": "Rnaseq Nextflow pipeline",
+      "company": "Precision Medicine Center",
+      "summary": "Engineered a robust, scalable RNA sequencing pipeline using Nextflow that automated the entire analysis workflow from raw reads to biological insights.",
+      "readTime": "15 min read",      "tags": "Nextflow, Pipeline, DevOps, Automation",
+      "challenge": "The Precision Medicine Center was processing hundreds of RNA-seq samples monthly using manual, error-prone workflows. They needed a scalable, reproducible pipeline that could handle varying sample types, ensure quality control, and integrate with their existing infrastructure while maintaining compliance with regulatory standards.",
+      "solution": "We developed a comprehensive Nextflow pipeline that automates the entire RNA-seq analysis workflow. The pipeline includes quality control, read alignment, quantification, differential expression analysis, and functional annotation. It features automatic resource management, error handling, resume capabilities, and generates comprehensive reports. The solution is containerized using Docker and can run on various compute environments.",
+      "results": "The consortium achieved a 10x reduction in processing time and completely eliminated manual errors. The automated pipeline now processes over 1,000 samples per month with consistent, reproducible results.",
+      "testimonial": "The Nextflow pipeline has transformed our genomics operations. What used to require weeks of manual work now runs automatically with perfect reproducibility."
+    },
+    "challenge": "The Challenge",
+    "solution": "Our Solution",
+    "technologiesUsed": "Technologies Used",
+    "resultsAndImpact": "Results & Impact",
+    "clientTestimonial": "Client Testimonial",
+    "researchTeam": "Research Team",
+    "projectGallery": "Project Gallery",
+    "ctaTitle": "Ready to Transform Your Project?",
+    "ctaDescription": "Let's discuss how we can help you achieve similar results with innovative solutions tailored to your needs.",
+    "getStartedToday": "Get Started Today"
+  },
+  "businessConsulting": {
+    "hero": {
+      "title": "Business consulting",
+      "subtitle": "Think boldly and act pragmatically",
+      "description": "By connecting strategy to execution and bridging competing imperatives, we help clients think boldly and act pragmatically through business and strategic IT consulting.",
+      "forbesAward": "Forbes names CGI as one of World's Best Management Consulting Firms' for 2024",
+      "idcMarketscape": "IDC MarketScape positions CGI as a 'Major Player' in its IDC MarketScape - Worldwide Business Consulting Services 2024 Vendor Assessment"
+    },
+    "capabilities": {
+      "title": "Our Capabilities",
+      "businessStrategy": {
+        "title": "Business strategy",
+        "content": "Strategic planning and implementation to drive organizational growth and competitive advantage."
+      },
+      "humanTransformation": {
+        "title": "Human-centered transformation",
+        "content": "People-focused change management that puts human experience at the center of transformation initiatives."
+      },
+      "operationalExcellence": {
+        "title": "Customer/citizen value and operational excellence",
+        "content": "Optimizing operations and processes to deliver exceptional value to customers and citizens."
+      },
+      "digitalLeadership": {
+        "title": "Digital leadership and CIO agenda",
+        "content": "Technology strategy and digital transformation leadership for modern organizations."
+      }
+    },
+    "contactExpert": {
+      "title": "Contact our expert",
+      "viewProfile": "View profile"
+    }
+  },
+  "lifeSciences": {
+    "hero": {
+      "title": "Life sciences",
+      "subtitle": "Leveraging our extensive industry expertise to accelerate digitization",
+      "description": "As life sciences organizations work to minimize regulatory and competitive impacts while maximizing revenue potential, CGI helps clients reduce costs and drive innovation through automation and process optimization."
+    },
+    "capabilities": {
+      "title": "Key capabilities",
+      "description": "CGI expertise and services help life sciences organizations increase speed, efficiency and innovation, while keeping pace with compliance demands.",
+      "items": {
+        "commercialLaunch": {
+          "title": "Commercial launch",
+          "description": "and operations to simplify planning and execution and improve launch efficiency"
+        },
+        "clinicalServices": {
+          "title": "Clinical services",
+          "description": "to reduce the duration of drug development timelines"
+        },
+        "manufacturingInnovation": {
+          "title": "Manufacturing innovation",
+          "description": "to achieve end-to-end supply chain optimization, manufacturing execution excellence, transport management and ERP, including Industry 4.0"
+        },
+        "regulatoryCompliance": {
+          "title": "Regulatory compliance",
+          "description": "to help clients continuously monitor clinical drug safety data across the entire product life cycle"
+        },
+        "outsourcing": {
+          "title": "Outsourcing",
+          "description": "to improve the management and operation of company-wide infrastructures, application suites and business processes"
+        },
+        "intelligentAutomation": {
+          "title": "Intelligent automation",
+          "description": "to increase efficiency of operations by combining advanced analytics with IoT and AI for predictive maintenance"
+        }
+      }
+    },
+    "contactExpert": {
+      "title": "Contact our expert",
+      "viewProfile": "View profile"
+    },    "relatedSectors": {
+      "title": "Related sectors"
+    }
+  },
+  "footer": {
+    "description": "Leading the way in business consulting and life sciences innovation.",
+    "company": "Company",
+    "resourceCenter": "Resource center",
+    "discoverMore": "Discover more about Ducologix",
+    "keepingInformed": "Keeping you informed",
+    "subscribe": "Subscribe",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contact": "Contact Info",
+    "followUs": "Follow Us",
+    "allRightsReserved": "All rights reserved."
+  },
+  "seo": {
+    "title": "Ducologix - Transforming Genomics with Intelligent Software",
+    "description": "Empowering bioinformatics enterprises with custom data solutions, innovative software tools, and cutting-edge genomics analysis platforms. Expert consulting for life sciences and biotechnology companies.",
+    "homeTitle": "Ducologix - Genomics & Bioinformatics Solutions | Data Analysis Platform",
+    "homeDescription": "Transform your genomics research with Ducologix's intelligent software solutions. Custom RNA-seq analysis, single-cell genomics, and bioinformatics consulting for life sciences companies.",
+    "caseStudiesTitle": "Case Studies - Ducologix Genomics Solutions",
+    "caseStudiesDescription": "Explore real-world success stories of genomics and bioinformatics projects. See how Ducologix transforms research with innovative data analysis solutions.",
+    "businessConsultingTitle": "Business Consulting - Strategic Genomics Solutions | Ducologix",
+    "businessConsultingDescription": "Expert business consulting for genomics and life sciences companies. Strategic planning, technology implementation, and growth acceleration services.",
+    "lifeSciencesTitle": "Life Sciences Solutions - Advanced Genomics Technology | Ducologix",
+    "lifeSciencesDescription": "Cutting-edge life sciences technology solutions. RNA-seq analysis, single-cell genomics, proteomics, and custom bioinformatics software development."
+  }
+}

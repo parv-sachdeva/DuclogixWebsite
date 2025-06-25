@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { useTranslations } from 'next-intl';
 import {
   ArrowRight,
   Plus,
@@ -12,6 +13,9 @@ import Image from 'next/image';
 
 // Hero Section Component
 export const BusinessConsultingHero: React.FC = () => {
+  const t = useTranslations('businessConsulting.hero');
+  const tCommon = useTranslations('common');
+
   return (
     <section className="bg-gray-50 py-20">
       <div className="container mx-auto px-6">
@@ -19,23 +23,21 @@ export const BusinessConsultingHero: React.FC = () => {
           {/* Left Content */}
           <div>
             <h1 className="text-5xl lg:text-6xl font-light text-gray-900 mb-6">
-              Business consulting
+              {t('title')}
             </h1>
             <h2 className="text-2xl lg:text-3xl text-gray-700 mb-8 leading-tight">
-              Think boldly and act pragmatically
+              {t('subtitle')}
             </h2>
             <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-              By connecting strategy to execution and bridging competing imperatives, we
-              help clients think boldly and act pragmatically through business and strategic
-              IT consulting.
+              {t('description')}
             </p>
 
             <div className="bg-white p-6 rounded-lg shadow-md mb-8">
               <p className="font-semibold text-gray-900 mb-2">
-                Forbes names CGI as one of World&apos;s Best Management Consulting Firms&apos; for 2024
+                {t('forbesAward')}
               </p>
               <Button variant="link" className="p-0 text-blue-600 hover:text-blue-800">
-                Learn more
+                {tCommon('learnMore')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
@@ -65,12 +67,10 @@ export const BusinessConsultingHero: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* IDC MarketScape Callout */}
+        </div>        {/* IDC MarketScape Callout */}
         <div className="mt-12">
           <Button variant="link" className="text-blue-600 hover:text-blue-800 text-lg">
-            IDC MarketScape positions CGI as a &apos;Major Player&apos; in its IDC MarketScape - Worldwide Business Consulting Services 2024 Vendor Assessment
+            {t('idcMarketscape')}
           </Button>
         </div>
       </div>
@@ -81,23 +81,24 @@ export const BusinessConsultingHero: React.FC = () => {
 // Expandable Capabilities Section
 export const CapabilitiesSection: React.FC = () => {
   const [expandedItems, setExpandedItems] = useState<number[]>([]);
+  const t = useTranslations('businessConsulting.capabilities');
 
   const capabilities = [
     {
-      title: 'Business strategy',
-      content: 'Strategic planning and implementation to drive organizational growth and competitive advantage.'
+      title: t('businessStrategy.title'),
+      content: t('businessStrategy.content')
     },
     {
-      title: 'Human-centered transformation',
-      content: 'People-focused change management that puts human experience at the center of transformation initiatives.'
+      title: t('humanTransformation.title'),
+      content: t('humanTransformation.content')
     },
     {
-      title: 'Customer/citizen value and operational excellence',
-      content: 'Optimizing operations and processes to deliver exceptional value to customers and citizens.'
+      title: t('operationalExcellence.title'),
+      content: t('operationalExcellence.content')
     },
     {
-      title: 'Digital leadership and CIO agenda',
-      content: 'Technology strategy and digital transformation leadership for modern organizations.'
+      title: t('digitalLeadership.title'),
+      content: t('digitalLeadership.content')
     }
   ];
 

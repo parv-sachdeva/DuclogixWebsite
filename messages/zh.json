@@ -1,0 +1,287 @@
+{
+  "common": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务",
+    "products": "产品",
+    "contact": "联系我们",
+    "businessConsulting": "商业咨询",
+    "lifeSciences": "生命科学",
+    "caseStudies": "案例研究",
+    "learnMore": "了解更多",
+    "getInTouch": "联系我们",
+    "readMore": "阅读更多",
+    "email": "邮箱",
+    "phone": "电话",
+    "address": "地址",
+    "submit": "提交",
+    "name": "姓名",
+    "message": "消息",
+    "company": "公司",
+    "readCaseStudy": "阅读案例研究",
+    "startYourProject": "开始您的项目",
+    "exploreMore": "探索更多",
+    "discoverCaseStudies": "发现案例研究",
+    "previousSlide": "上一张幻灯片",
+    "nextSlide": "下一张幻灯片",
+    "goToSlide": "转到幻灯片",
+    "newsAndClientStories": "新闻和客户故事",
+    "exploreInYourGeography": "在您的地区探索"
+  },
+  "navigation": {
+    "menu": "菜单",
+    "close": "关闭"
+  },
+  "home": {
+    "heroSlides": {
+      "slide1": {
+        "title": "用智能软件变革基因组学",
+        "description": "通过定制数据解决方案和创新软件工具为生物信息学企业赋能。",
+        "cta": "发现案例研究"
+      },
+      "slide2": {
+        "title": "释放大数据的力量",
+        "description": "从探索到预测，我们制定数据驱动的策略，推动决策并加速增长。",
+        "cta": "发现案例研究"
+      },
+      "slide3": {
+        "title": "让数据变得有意义",
+        "description": "交互式仪表板和视觉叙事为复杂数据集带来清晰度。",
+        "cta": "发现案例研究"
+      }
+    },
+    "threeColumns": {
+      "insights": {
+        "title": "洞察",
+        "description": "我们使用真实证据而非空洞术语，将复杂数据转化为清晰故事。在我们的案例研究中探索我们的工作如何帮助客户从各个行业的数据中提取价值。",
+        "cta": "探索我们的案例研究",
+        "items": {
+          "bioinformatics": "生物信息学",
+          "dataStorytelling": "数据叙事与仪表板",
+          "clinicalAnalytics": "临床和组学分析",
+          "academicCollaborations": "学术合作"
+        }
+      },
+      "services": {
+        "title": "服务",
+        "description": "我们通过提供从原型到部署的安全、可扩展且直观的数据解决方案，帮助客户应对当今数据丰富的世界。",
+        "cta": "探索我们的案例研究",
+        "items": {
+          "bioinformaticsConsulting": "生物信息学咨询",
+          "dataVisualization": "交互式数据可视化",
+          "pipelineAutomation": "管道自动化",
+          "cloudSolutions": "云解决方案",
+          "dataScience": "数据科学与机器学习",
+          "dataWrangling": "数据处理"
+        }
+      },      "solutions": {
+        "title": "解决方案",
+        "description": "我们的定制工具和可重用组件组合加速您将想法转化为洞察的能力——无需从头开始。",
+        "cta": "探索我们的案例研究",
+        "items": {
+          "rShinyApps": "R Shiny应用开发",
+          "nextflowPipelines": "Nextflow管道",
+          "highPerformanceComputing": "高性能计算",
+          "customDashboards": "定制交互式仪表板",
+          "ngsAnalysis": "NGS分析"
+        }
+      },
+      "cta": {
+        "title": "准备好释放数据的力量了吗？",
+        "description": "了解我们的定制分析解决方案和交互式工具如何提升您的研究，简化决策制定，并产生真正的影响。"
+      }
+    },
+    "partners": {
+      "title": "我们的合作伙伴"
+    },
+    "caseStudies": {
+      "title": "案例研究",
+      "discoverMore": "发现更多客户成功案例"
+    },
+    "contact": {
+      "title": "联系我们",
+      "subtitle": "准备开始了吗？",
+      "description": "有项目想法吗？我们很乐意听取您的意见。让我们讨论如何帮助您将想法变为现实。",
+      "form": {
+        "name": "全名",
+        "email": "电子邮箱地址",
+        "company": "公司（可选）",
+        "subject": "主题",
+        "message": "信息",
+        "nameRequired": "姓名为必填项",
+        "emailRequired": "电子邮箱为必填项",
+        "emailInvalid": "请输入有效的电子邮箱地址",
+        "subjectRequired": "主题为必填项",
+        "messageRequired": "信息为必填项",
+        "submitting": "发送中...",
+        "submit": "发送消息",
+        "success": "谢谢！您的消息已成功发送。",
+        "error": "出现问题。请重试。",
+        "thankYou": "谢谢！"
+      }
+    }
+  },  "caseStudies": {
+    "title": "案例研究",
+    "subtitle": "发现我们如何通过创新技术解决方案和数据驱动的洞察帮助组织变革其运营。",
+    "readTime": "分钟阅读",
+    "moreItems": "更多",
+    "cta": {
+      "title": "准备创造您的成功故事？",
+      "description": "加入我们不断增长的满意客户名单，他们已通过我们的创新解决方案变革了其运营。",
+      "button": "开始您的项目"
+    },
+    "bulkrnaApp": {
+      "title": "批量RNA-seq分析应用",
+      "company": "BioGenomics研究所",
+      "summary": "开发一个全面的基于网络的平台，用于批量RNA-seq数据分析，具有先进的统计算法和为基因组学研究人员提供的交互式可视化。",
+      "readTime": "8",
+      "tags": "生物信息学，RNA-seq，网络应用",
+      "challenge": "BioGenomics研究所需要一个用户友好的平台来分析大型RNA-seq数据集。他们现有的工作流程是分散的，需要大量的手动处理，导致研究流水线效率低下。",
+      "solution": "我们开发了一个完全集成的网络应用，采用React和Next.js前端，由强大的Python FastAPI后端驱动。该平台集成了经过验证的生物信息学工具，如DESeq2和edgeR进行差异表达分析，并提供交互式D3.js可视化进行数据探索。",
+      "results": "该平台将分析时间减少了75%，使研究人员能够在没有广泛编程技能的情况下进行复杂的RNA-seq分析。该研究所报告研究生产力提高了300%，并能够承担更多的合作项目。",
+      "testimonial": "Ducologix开发的RNA-seq分析平台彻底革命了我们的研究能力。以前需要几周的工作现在可以在几小时内完成。"
+    },
+    "scrnaApp": {
+      "title": "单细胞RNA-seq分析套件",
+      "company": "细胞动力学实验室",
+      "summary": "构建先进的单细胞RNA-seq分析流水线，采用机器学习进行细胞类型识别和轨迹分析，用于癌症研究。",
+      "readTime": "10",
+      "tags": "单细胞基因组学，机器学习，Vue.js",
+      "challenge": "细胞动力学实验室使用各种不连接的工具手动处理大型单细胞RNA-seq数据集，导致结果不一致和分析周期延长。他们需要一个统一的平台来支持他们的癌症研究倡议。",
+      "solution": "我们的解决方案使用Vue.js构建响应式用户界面，与基于Python的分析引擎集成，使用Scanpy和Seurat。我们使用scikit-learn和TensorFlow实现了机器学习算法，用于高级细胞分类和轨迹分析，所有这些都部署在Docker容器中。",
+      "results": "实验室实现了400%的处理速度改进，并识别了以前被忽视的新细胞亚群。标准化流水线在不同研究项目中产生了可重现的结果。",
+      "testimonial": "scRNA-seq套件改变了我们对肿瘤细胞异质性的理解。自动化机器学习流水线揭示了用手动方法无法实现的洞察。"
+    },
+    "biodiversityApp": {
+      "title": "生物多样性监测系统",
+      "company": "国际保护联盟",
+      "summary": "开发移动和网络应用程序，用于实时生物多样性监测，集成GIS和AI驱动的物种识别，用于保护项目。",
+      "readTime": "12",
+      "tags": "保护，移动应用，AI，GIS",
+      "challenge": "国际保护联盟使用过时的方法收集生物多样性数据，导致报告延迟和错失及时保护行动的机会。他们需要一个现代的、移动优先的解决方案来支持实地研究人员。",
+      "solution": "我们开发了一个全面的解决方案，使用React Native进行移动数据收集，Angular构建网络仪表板，以及Node.js/Express提供后端服务。系统包括用于空间分析的GIS集成，TensorFlow驱动的图像识别用于物种识别，以及托管在AWS上的实时数据处理。",
+      "results": "该系统实现了500%的数据收集效率提升，并将报告时间从几个月减少到几天。AI驱动的物种识别达到了95%的准确率，甚至非专业志愿者也能贡献有价值的数据。",
+      "testimonial": "生物多样性监测系统彻底革命了我们的保护努力。我们现在可以实时响应威胁，并用当前数据做出明智的决策。"
+    },
+    "rnaseqPipeline": {
+      "title": "自动化RNA-seq Nextflow流水线",
+      "company": "精准医学联盟",
+      "summary": "实施完全自动化、可扩展的RNA-seq处理流水线，使用Nextflow在云环境中进行高通量基因组分析。",
+      "readTime": "6",
+      "tags": "Nextflow，云计算，流水线自动化",
+      "challenge": "精准医学联盟使用不一致的协议手动处理RNA-seq样本，等待时间很长。他们需要一个完全自动化、可重现的流水线，能够适应波动的工作负载。",
+      "solution": "我们设计了一个强大的Nextflow流水线，集成质量控制、比对（STAR）、定量（RSEM）和差异表达分析（DESeq2）。流水线针对AWS Batch进行了优化，使用Docker/Singularity容器以实现最大的可重现性和可扩展性。",
+      "results": "联盟实现了10倍的处理时间减少，并完全消除了手动错误。自动化流水线现在每月处理超过1,000个样本，结果一致且可重现。",      "testimonial": "Nextflow流水线改变了我们的基因组操作。以前需要数周手动工作的事情现在可以自动运行，完美可重现。"
+    },
+    "challenge": "挑战",
+    "solution": "我们的解决方案",
+    "technologiesUsed": "使用的技术",
+    "resultsAndImpact": "结果与影响",
+    "clientTestimonial": "客户推荐",
+    "researchTeam": "研究团队",
+    "projectGallery": "项目画廊",
+    "ctaTitle": "准备变革您的项目？",
+    "ctaDescription": "让我们讨论如何帮助您通过量身定制的创新解决方案实现类似的结果。",
+    "getStartedToday": "今天开始"
+  },
+  "businessConsulting": {
+    "hero": {
+      "title": "商业咨询",
+      "subtitle": "大胆思考，务实行动",
+      "description": "通过将战略与执行相连接并弥合竞争命令，我们帮助客户通过商业和战略IT咨询大胆思考并务实行动。",
+      "forbesAward": "福布斯将CGI评为2024年'世界最佳管理咨询公司'之一",
+      "idcMarketscape": "IDC MarketScape在其IDC MarketScape - 全球商业咨询服务2024供应商评估中将CGI定位为'主要参与者'"
+    },
+    "capabilities": {
+      "title": "我们的能力",
+      "businessStrategy": {
+        "title": "商业策略",
+        "content": "推动组织增长和竞争优势的战略规划和实施。"
+      },
+      "humanTransformation": {
+        "title": "以人为中心的转型",
+        "content": "以人为焦点的变革管理，将人类体验置于转型倡议的中心。"
+      },
+      "operationalExcellence": {
+        "title": "客户/公民价值和卓越运营",
+        "content": "优化运营和流程，为客户和公民提供卓越价值。"
+      },
+      "digitalLeadership": {
+        "title": "数字化领导力和CIO议程",
+        "content": "现代组织的技术战略和数字化转型领导力。"
+      }
+    },
+    "contactExpert": {
+      "title": "联系我们的专家",
+      "viewProfile": "查看简介"
+    }
+  },
+  "lifeSciences": {
+    "hero": {
+      "title": "生命科学",
+      "subtitle": "利用我们广泛的行业专业知识加速数字化",
+      "description": "随着生命科学组织努力最小化监管和竞争影响，同时最大化收入潜力，CGI帮助客户通过自动化和流程优化降低成本并推动创新。"
+    },
+    "capabilities": {
+      "title": "核心能力",
+      "description": "CGI的专业知识和服务帮助生命科学组织提高速度、效率和创新能力，同时跟上合规要求的步伐。",
+      "items": {
+        "commercialLaunch": {
+          "title": "商业发布",
+          "description": "和运营，简化规划和执行，提高发布效率"
+        },
+        "clinicalServices": {
+          "title": "临床服务",
+          "description": "缩短药物开发时间"
+        },
+        "manufacturingInnovation": {
+          "title": "制造创新",
+          "description": "实现端到端供应链优化、制造执行卓越、运输管理和ERP，包括工业4.0"
+        },
+        "regulatoryCompliance": {
+          "title": "监管合规",
+          "description": "帮助客户在整个产品生命周期中持续监控临床药物安全数据"
+        },
+        "outsourcing": {
+          "title": "外包",
+          "description": "改善全公司基础设施、应用套件和业务流程的管理和运营"
+        },
+        "intelligentAutomation": {
+          "title": "智能自动化",
+          "description": "通过将高级分析与物联网和人工智能相结合来提高运营效率，实现预测性维护"
+        }
+      }
+    }
+  },  "footer": {
+    "description": "在商业咨询和生命科学创新方面引领道路。",
+    "company": "公司",
+    "resourceCenter": "资源中心",
+    "discoverMore": "了解更多关于Ducologix",
+    "keepingInformed": "为您提供最新信息",
+    "subscribe": "订阅",
+    "quickLinks": "快速链接",
+    "services": "服务",
+    "contact": "联系信息",
+    "followUs": "关注我们",
+    "allRightsReserved": "版权所有。"
+  },
+  "contactExpert": {
+    "title": "联系我们的专家",
+    "viewProfile": "查看简介"
+  },
+  "relatedSectors": {
+    "title": "相关行业"
+  },
+  "seo": {
+    "title": "Ducologix - 用智能软件转化基因组学",
+    "description": "通过定制数据解决方案、创新软件工具和尖端基因组学分析平台赋能生物信息学企业。为生命科学和生物技术公司提供专家咨询。",
+    "homeTitle": "Ducologix - 基因组学与生物信息学解决方案 | 数据分析平台",
+    "homeDescription": "用Ducologix的智能软件解决方案转化您的基因组学研究。为生命科学公司提供定制RNA-seq分析、单细胞基因组学和生物信息学咨询。",
+    "caseStudiesTitle": "案例研究 - Ducologix基因组学解决方案",
+    "caseStudiesDescription": "探索基因组学和生物信息学项目的真实成功故事。看看Ducologix如何通过创新的数据分析解决方案转化研究。",
+    "businessConsultingTitle": "商业咨询 - 战略基因组学解决方案 | Ducologix",
+    "businessConsultingDescription": "为基因组学和生命科学公司提供专家商业咨询。战略规划、技术实施和增长加速服务。",
+    "lifeSciencesTitle": "生命科学解决方案 - 先进基因组学技术 | Ducologix",
+    "lifeSciencesDescription": "尖端生命科学技术解决方案。RNA-seq分析、单细胞基因组学、蛋白质组学和定制生物信息学软件开发。"
+  }
+}
