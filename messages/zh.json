@@ -271,5 +271,17 @@
   },
   "relatedSectors": {
     "title": "相关行业"
+  },
+  "seo": {
+    "title": "Ducologix - 用智能软件转化基因组学",
+    "description": "通过定制数据解决方案、创新软件工具和尖端基因组学分析平台赋能生物信息学企业。为生命科学和生物技术公司提供专家咨询。",
+    "homeTitle": "Ducologix - 基因组学与生物信息学解决方案 | 数据分析平台",
+    "homeDescription": "用Ducologix的智能软件解决方案转化您的基因组学研究。为生命科学公司提供定制RNA-seq分析、单细胞基因组学和生物信息学咨询。",
+    "caseStudiesTitle": "案例研究 - Ducologix基因组学解决方案",
+    "caseStudiesDescription": "探索基因组学和生物信息学项目的真实成功故事。看看Ducologix如何通过创新的数据分析解决方案转化研究。",
+    "businessConsultingTitle": "商业咨询 - 战略基因组学解决方案 | Ducologix",
+    "businessConsultingDescription": "为基因组学和生命科学公司提供专家商业咨询。战略规划、技术实施和增长加速服务。",
+    "lifeSciencesTitle": "生命科学解决方案 - 先进基因组学技术 | Ducologix",
+    "lifeSciencesDescription": "尖端生命科学技术解决方案。RNA-seq分析、单细胞基因组学、蛋白质组学和定制生物信息学软件开发。"
   }
 }

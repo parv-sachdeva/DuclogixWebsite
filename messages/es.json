@@ -271,5 +271,17 @@
     "contact": "Información de contacto",
     "followUs": "Síguenos",
     "allRightsReserved": "Todos los derechos reservados."
+  },
+  "seo": {
+    "title": "Ducologix - Transformando la Genómica con Software Inteligente",
+    "description": "Potenciando empresas de bioinformática con soluciones de datos personalizadas, herramientas de software innovadoras y plataformas de análisis genómico de vanguardia. Consultoría experta para empresas de ciencias de la vida y biotecnología.",
+    "homeTitle": "Ducologix - Soluciones de Genómica y Bioinformática | Plataforma de Análisis de Datos",
+    "homeDescription": "Transforme su investigación genómica con las soluciones de software inteligentes de Ducologix. Análisis RNA-seq personalizado, genómica de células individuales y consultoría en bioinformática para empresas de ciencias de la vida.",
+    "caseStudiesTitle": "Casos de Estudio - Soluciones Genómicas Ducologix",
+    "caseStudiesDescription": "Explore historias de éxito del mundo real de proyectos de genómica y bioinformática. Vea cómo Ducologix transforma la investigación con soluciones innovadoras de análisis de datos.",
+    "businessConsultingTitle": "Consultoría Empresarial - Soluciones Genómicas Estratégicas | Ducologix",
+    "businessConsultingDescription": "Consultoría experta para empresas de genómica y ciencias de la vida. Planificación estratégica, implementación tecnológica y servicios de aceleración del crecimiento.",
+    "lifeSciencesTitle": "Soluciones de Ciencias de la Vida - Tecnología Genómica Avanzada | Ducologix",
+    "lifeSciencesDescription": "Soluciones tecnológicas de ciencias de la vida de vanguardia. Análisis RNA-seq, genómica de células individuales, proteómica y desarrollo de software bioinformático personalizado."
   }
 }

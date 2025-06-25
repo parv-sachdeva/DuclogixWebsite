@@ -268,5 +268,17 @@
     "contact": "Kontakt Info",
     "followUs": "Folgen Sie uns",
     "allRightsReserved": "Alle Rechte vorbehalten."
+  },
+  "seo": {
+    "title": "Ducologix - Genomik mit intelligenter Software transformieren",
+    "description": "Stärkung von Bioinformatik-Unternehmen mit maßgeschneiderten Datenlösungen, innovativen Software-Tools und modernsten Genomik-Analyseplattformen. Expertenberatung für Life-Sciences- und Biotechnologieunternehmen.",
+    "homeTitle": "Ducologix - Genomik & Bioinformatik Lösungen | Datenanalyseplattform",
+    "homeDescription": "Transformieren Sie Ihre Genomikforschung mit Ducologix' intelligenten Softwarelösungen. Maßgeschneiderte RNA-seq-Analyse, Einzelzell-Genomik und Bioinformatik-Beratung für Life-Sciences-Unternehmen.",
+    "caseStudiesTitle": "Fallstudien - Ducologix Genomik-Lösungen",
+    "caseStudiesDescription": "Entdecken Sie reale Erfolgsgeschichten von Genomik- und Bioinformatik-Projekten. Sehen Sie, wie Ducologix die Forschung mit innovativen Datenanalyselösungen transformiert.",
+    "businessConsultingTitle": "Unternehmensberatung - Strategische Genomik-Lösungen | Ducologix",
+    "businessConsultingDescription": "Expertenberatung für Genomik- und Life-Sciences-Unternehmen. Strategische Planung, Technologieimplementierung und Wachstumsbeschleunigungsdienstleistungen.",
+    "lifeSciencesTitle": "Life-Sciences-Lösungen - Fortschrittliche Genomik-Technologie | Ducologix",
+    "lifeSciencesDescription": "Modernste Life-Sciences-Technologielösungen. RNA-seq-Analyse, Einzelzell-Genomik, Proteomik und maßgeschneiderte Bioinformatik-Softwareentwicklung."
   }
 }
