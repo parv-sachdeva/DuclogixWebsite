@@ -4,9 +4,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from 'next-intl';
 
+import { useLocale } from 'next-intl';
+import Link from 'next/link';
+
 const RelatedSectorsSection: React.FC = () => {
     const t = useTranslations('lifeSciences.relatedSectors');
     const tCommon = useTranslations('common');
+    const locale = useLocale();
     const sectors = [
         {
             title: 'Health',
@@ -30,9 +34,11 @@ const RelatedSectorsSection: React.FC = () => {
                             <CardContent className="p-8">
                                 <div className="h-2 bg-gray-300 mb-6"></div>
                                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">{sector.title}</h3>
-                                <p className="text-gray-600 leading-relaxed mb-6">{sector.description}</p>                                <Button variant="link" className="p-0 text-gray-900 hover:text-blue-600">
-                                    {tCommon('learnMore')}
-                                    <ArrowRight className="ml-2 h-4 w-4" />
+                                <p className="text-gray-600 leading-relaxed mb-6">{sector.description}</p>                                <Button asChild variant="link" className="p-0 text-gray-900 hover:text-blue-600">
+                                    <Link href={`/${locale}${sector.link}`}>
+                                        {tCommon('learnMore')}
+                                        <ArrowRight className="ml-2 h-4 w-4" />
+                                    </Link>
                                 </Button>
                             </CardContent>
                         </Card>

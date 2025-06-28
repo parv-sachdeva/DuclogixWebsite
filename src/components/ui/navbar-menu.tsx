@@ -86,8 +86,10 @@ export const ProductItem = ({
   href: string;
   src: string;
 }) => {
+  const params = useParams();
+  const locale = params.locale || 'en';
   return (
-    <a href={href} className="flex space-x-2">
+    <Link href={`/${locale}${href}`} className="flex space-x-2">
       <Image
         src={src}
         width={140}
@@ -103,17 +105,23 @@ export const ProductItem = ({
           {description}
         </p>
       </div>
-    </a>
+    </Link>
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: { children: React.ReactNode; href: string; className?: string }) => {
+import Link from "next/link";
+import { useParams } from "next/navigation";
+
+export const HoveredLink = ({ children, href, ...rest }: { children: React.ReactNode; href: string; className?: string }) => {
+  const params = useParams();
+  const locale = params.locale || 'en';
   return (
-    <a
+    <Link
+      href={`/${locale}${href}`}
       {...rest}
       className="text-neutral-700 dark:text-neutral-200 hover:text-black "
     >
       {children}
-    </a>
+    </Link>
   );
 }; 

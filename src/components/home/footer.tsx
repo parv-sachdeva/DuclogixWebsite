@@ -5,19 +5,22 @@ import { Button } from '@/components/ui/button';
 import { Linkedin, Twitter, Youtube, Facebook } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
+import { useLocale } from 'next-intl';
+
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   const t = useTranslations('footer');
   const tCommon = useTranslations('common');
+  const locale = useLocale();
   const companyLinks = [
-    { name: tCommon('about'), href: '/about' },
+    { name: tCommon('about'), href: `/${locale}/about` },
   ];
 
   const resourceLinks = [
-    { name: 'Articles', href: '/articles' },
-    { name: 'Blogs', href: '/blogs' },
-    { name: tCommon('caseStudies'), href: '/case-studies' },
-    { name: 'Podcasts', href: '/podcasts' },
+    { name: 'Articles', href: `/${locale}/articles` },
+    { name: 'Blogs', href: `/${locale}/blogs` },
+    { name: tCommon('caseStudies'), href: `/${locale}/case-studies` },
+    { name: 'Podcasts', href: `/${locale}/podcasts` },
   ];
 
   const socialLinks = [
@@ -117,19 +120,19 @@ const Footer: React.FC = () => {
             
             <div className="flex flex-wrap gap-6 mt-4 md:mt-0">
               <Link 
-                href="/privacy" 
+                href={`/${locale}/privacy`} 
                 className="text-gray-600 hover:text-blue-600 text-sm transition-colors duration-200"
               >
                 Privacy Policy
               </Link>
               <Link 
-                href="/terms" 
+                href={`/${locale}/terms`} 
                 className="text-gray-600 hover:text-blue-600 text-sm transition-colors duration-200"
               >
                 Terms of Service
               </Link>
               <Link 
-                href="/cookies" 
+                href={`/${locale}/cookies`} 
                 className="text-gray-600 hover:text-blue-600 text-sm transition-colors duration-200"
               >
                 Cookie Settings

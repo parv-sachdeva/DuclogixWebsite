@@ -19,11 +19,14 @@ import {
   Smartphone
 } from 'lucide-react';
 
+import { useLocale } from 'next-intl';
+
 const ThreeColumnSection = () => {
   const [visibleItems, setVisibleItems] = useState<string[]>([]);
   const sectionRef = useRef<HTMLElement>(null);
   const t = useTranslations('home.threeColumns');
   const tCommon = useTranslations('common');
+  const locale = useLocale();
 
   // Data configuration with translations
   const sectionsData = [
@@ -159,7 +162,7 @@ const ThreeColumnSection = () => {
                       return (
                         <Link
                           key={item.name}
-                          href={item.href}
+                          href={`/${locale}${item.href}`}
                           className="group/tag flex items-center space-x-2 px-4 py-2 bg-gray-50 hover:bg-white text-gray-700 hover:text-gray-900 rounded-xl text-sm font-medium transition-all duration-300 hover:shadow-md hover:scale-105 border border-transparent hover:border-gray-200"
                           role="button"
                           tabIndex={0}
@@ -173,7 +176,7 @@ const ThreeColumnSection = () => {
 
                   {/* Enhanced CTA */}
                   <Link
-                    href={section.ctaHref}
+                    href={`/${locale}${section.ctaHref}`}
                     className={`inline-flex items-center ${section.accentColor} font-semibold transition-all duration-300 group/cta text-lg hover:gap-3 gap-2`}
                     role="button"
                     tabIndex={0}

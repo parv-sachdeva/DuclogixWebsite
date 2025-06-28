@@ -6,10 +6,13 @@ import { Calendar, Clock, ArrowRight, Tag } from 'lucide-react';
 import { getAllCaseStudies } from '@/lib/case-studies-data';
 import { useTranslations } from 'next-intl';
 
+import { useLocale } from 'next-intl';
+
 export default function CaseStudiesPage() {
   const caseStudies = getAllCaseStudies();
   const t = useTranslations('caseStudies');
   const tCommon = useTranslations('common');
+  const locale = useLocale();
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
@@ -39,7 +42,7 @@ export default function CaseStudiesPage() {
               key={study.slug}
               className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border border-gray-100"
             >
-              <Link href={`/case-studies/${study.slug}`} className="block group">
+              <Link href={`/${locale}/case-studies/${study.slug}`} className="block group">
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">                  <Image
                     src={study.imageUrl}
@@ -104,7 +107,7 @@ export default function CaseStudiesPage() {
               {t('cta.description')}
             </p>
             <Link
-              href="/contact"
+              href={`/${locale}/contact`}
               className="inline-flex items-center bg-white text-purple-600 font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors"
             >
               {t('cta.button')}

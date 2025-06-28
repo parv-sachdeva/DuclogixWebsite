@@ -5,15 +5,18 @@ import { Menu, MenuItem, ProductItem } from '@/components/ui/navbar-menu';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
+import { useLocale } from 'next-intl';
+
 const Header = () => {
     const [active, setActive] = useState<string | null>(null);
     const t = useTranslations('common');
+    const locale = useLocale();
     return (
         <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50" onMouseLeave={() => setActive(null)}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center">
-                        <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text hover:shadow-2xl">
+                        <Link href={`/${locale}`} className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text hover:shadow-2xl">
                             Ducologix
                         </Link>
                     </div>

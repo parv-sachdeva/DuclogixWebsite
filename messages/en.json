@@ -74,7 +74,8 @@
           "dataScience": "Data Science & Machine Learning",
           "dataWrangling": "Data Wrangling"
         }
-      },      "solutions": {
+      },
+      "solutions": {
         "title": "Solutions",
         "description": "Our portfolio of custom-built tools and reusable components accelerates your ability to turn ideas into insight—without starting from scratch.",
         "cta": "Explore our Case Studies",
@@ -112,14 +113,16 @@
         "emailRequired": "Email is required",
         "emailInvalid": "Please enter a valid email address",
         "subjectRequired": "Subject is required",
-        "messageRequired": "Message is required",        "submitting": "Sending...",
+        "messageRequired": "Message is required",
+        "submitting": "Sending...",
         "submit": "Send Message",
         "success": "Thank you! Your message has been sent successfully.",
         "error": "Something went wrong. Please try again.",
         "thankYou": "Thank you!"
       }
     }
-  },  "caseStudies": {
+  },
+  "caseStudies": {
     "title": "Case Studies",
     "subtitle": "Discover how we've helped organizations transform their operations with innovative technology solutions and data-driven insights.",
     "readTime": "min read",
@@ -134,16 +137,18 @@
       "company": "BioTech Research Institute",
       "summary": "Developed a comprehensive bulk RNA sequencing analysis platform that streamlined genomic research workflows and reduced analysis time by 70%.",
       "readTime": "8 min read",
-      "tags": ["Bioinformatics", "RNA Sequencing", "Data Visualization", "React"],
+      "tags": "Bioinformatics, RNA Sequencing, Data Visualization, React",
       "challenge": "The BioTech Research Institute was struggling with fragmented tools for bulk RNA sequencing analysis. Researchers had to use multiple software packages, leading to inefficient workflows, inconsistent results, and significant time delays in their genomic studies. The lack of a unified platform was hindering their ability to process large datasets efficiently.",
-      "solution": "We developed a comprehensive web-based bulkRNA analysis platform that integrates all necessary tools into a single, intuitive interface. The solution features automated quality control, differential expression analysis, pathway enrichment, and interactive visualization tools. Built with React and Next.js for the frontend, with a robust Python backend using FastAPI and integrated with popular bioinformatics libraries like DESeq2 and edgeR.",      "results": "The platform reduced analysis time by 75% and enabled researchers to perform complex RNA-seq analyses without extensive programming skills. The institute reported a 300% increase in research productivity and was able to undertake more collaborative projects.",
+      "solution": "We developed a comprehensive web-based bulkRNA analysis platform that integrates all necessary tools into a single, intuitive interface. The solution features automated quality control, differential expression analysis, pathway enrichment, and interactive visualization tools. Built with React and Next.js for the frontend, with a robust Python backend using FastAPI and integrated with popular bioinformatics libraries like DESeq2 and edgeR.",
+      "results": "The platform reduced analysis time by 75% and enabled researchers to perform complex RNA-seq analyses without extensive programming skills. The institute reported a 300% increase in research productivity and was able to undertake more collaborative projects.",
       "testimonial": "The RNA-seq analysis platform developed by Ducologix has revolutionized our research capabilities. What used to take weeks can now be accomplished in hours."
     },
     "scrnaApp": {
       "title": "scRNA App",
       "company": "Genomics Innovation Lab",
       "summary": "Built a cutting-edge single-cell RNA sequencing analysis platform that enables researchers to explore cellular heterogeneity with unprecedented detail and speed.",
-      "readTime": "10 min read",      "tags": "Single-cell, Machine Learning, Data Science, Vue.js",
+      "readTime": "10 min read",
+      "tags": "Single-cell, Machine Learning, Data Science, Vue.js",
       "challenge": "Single-cell RNA sequencing analysis requires sophisticated computational methods to handle the complexity and scale of the data. The Genomics Innovation Lab needed a platform that could perform clustering, trajectory analysis, and cell type identification while being accessible to researchers without extensive computational backgrounds.",
       "solution": "We created an advanced scRNA analysis platform featuring automated cell clustering, trajectory inference, differential expression analysis, and cell type annotation. The platform incorporates machine learning algorithms for dimensionality reduction and clustering, with an intuitive drag-and-drop interface for creating analysis pipelines. Built with Vue.js frontend and Python backend utilizing Scanpy, Seurat, and custom ML models.",
       "results": "The lab achieved a 400% improvement in processing speed and identified new cell subpopulations that were previously overlooked. The standardized pipeline led to reproducible results across different research projects.",
@@ -153,7 +158,8 @@
       "title": "Biodiversity App",
       "company": "EcoConservation Foundation",
       "summary": "Developed a comprehensive biodiversity monitoring platform that combines citizen science data collection with advanced analytics to track ecosystem health across multiple regions.",
-      "readTime": "12 min read",      "tags": "Environmental Science, Mobile App, GIS, Conservation",
+      "readTime": "12 min read",
+      "tags": "Environmental Science, Mobile App, GIS, Conservation",
       "challenge": "The EcoConservation Foundation needed a scalable solution to monitor biodiversity across vast geographical areas. Traditional methods were time-consuming, expensive, and limited in scope. They required a platform that could engage citizen scientists while maintaining data quality and providing actionable insights for conservation efforts.",
       "solution": "We built a comprehensive biodiversity monitoring ecosystem consisting of a mobile app for field data collection, a web dashboard for data analysis, and automated reporting tools. The solution integrates GIS mapping, species identification using machine learning, and real-time data validation. The platform supports offline data collection and automatic synchronization when connectivity is restored.",
       "results": "The system enabled a 500% increase in data collection efficiency and reduced reporting time from months to days. The AI-powered species recognition achieved 95% accuracy, allowing even non-expert volunteers to contribute valuable data.",
@@ -163,7 +169,8 @@
       "title": "Rnaseq Nextflow pipeline",
       "company": "Precision Medicine Center",
       "summary": "Engineered a robust, scalable RNA sequencing pipeline using Nextflow that automated the entire analysis workflow from raw reads to biological insights.",
-      "readTime": "15 min read",      "tags": "Nextflow, Pipeline, DevOps, Automation",
+      "readTime": "15 min read",
+      "tags": "Nextflow, Pipeline, DevOps, Automation",
       "challenge": "The Precision Medicine Center was processing hundreds of RNA-seq samples monthly using manual, error-prone workflows. They needed a scalable, reproducible pipeline that could handle varying sample types, ensure quality control, and integrate with their existing infrastructure while maintaining compliance with regulatory standards.",
       "solution": "We developed a comprehensive Nextflow pipeline that automates the entire RNA-seq analysis workflow. The pipeline includes quality control, read alignment, quantification, differential expression analysis, and functional annotation. It features automatic resource management, error handling, resume capabilities, and generates comprehensive reports. The solution is containerized using Docker and can run on various compute environments.",
       "results": "The consortium achieved a 10x reduction in processing time and completely eliminated manual errors. The automated pipeline now processes over 1,000 samples per month with consistent, reproducible results.",
@@ -251,7 +258,8 @@
     "contactExpert": {
       "title": "Contact our expert",
       "viewProfile": "View profile"
-    },    "relatedSectors": {
+    },
+    "relatedSectors": {
       "title": "Related sectors"
     }
   },

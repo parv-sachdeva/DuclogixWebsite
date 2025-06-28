@@ -7,11 +7,14 @@ import { ArrowLeft, Calendar, Clock, Tag, CheckCircle, Quote, Users } from 'luci
 import { getCaseStudyBySlug } from '@/lib/case-studies-data';
 import { useTranslations } from 'next-intl';
 
+import { useLocale } from 'next-intl';
+
 export default function CaseStudyPage({ params }: { params: Promise<{ slug: string; locale: string }> }) {
   const { slug } = use(params);
   const caseStudy = getCaseStudyBySlug(slug);
   const t = useTranslations('caseStudies');
   const commonT = useTranslations('common');
+  const locale = useLocale();
 
   if (!caseStudy) {
     notFound();
@@ -30,7 +33,7 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
       {/* Navigation */}
       <div className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">          <Link 
-            href="/#case-studies" 
+            href={`/${locale}/#case-studies`} 
             className="inline-flex items-center text-purple-600 hover:text-purple-700 transition-colors"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
@@ -164,7 +167,7 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
             {t('ctaDescription')}
           </p>
           <Link
-            href="/contact"
+            href={`/${locale}/contact`}
             className="inline-flex items-center bg-white text-purple-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors"
           >
             {t('getStartedToday')}

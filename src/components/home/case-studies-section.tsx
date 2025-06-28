@@ -16,9 +16,12 @@ interface CaseStudiesSectionProps {
   caseStudies: CaseStudy[];
 }
 
+import { useLocale } from 'next-intl';
+
 const CaseStudiesSection = ({ caseStudies }: CaseStudiesSectionProps) => {
   const t = useTranslations('home.caseStudies');
   const caseStudiesT = useTranslations('caseStudies');
+  const locale = useLocale();
 
   return (
     <section id="case-studies" className="py-16 lg:py-24 bg-gradient-to-br from-purple-800 to-purple-900 text-white">
@@ -28,7 +31,7 @@ const CaseStudiesSection = ({ caseStudies }: CaseStudiesSectionProps) => {
           {caseStudies.map((study, index) => (
             <Link
               key={index}
-              href={`/case-studies/${study.slug}`}
+              href={`/${locale}/case-studies/${study.slug}`}
               className="bg-white text-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
             >
               <div className="relative h-48 overflow-hidden">                <Image
@@ -51,7 +54,7 @@ const CaseStudiesSection = ({ caseStudies }: CaseStudiesSectionProps) => {
           ))}
         </div>        <div className="mt-12 text-center">
           <Link
-            href="/case-studies"
+            href={`/${locale}/case-studies`}
             className="inline-flex items-center text-white font-semibold hover:text-gray-200 transition-colors group"
           >
             {t('discoverMore')}
